@@ -1,0 +1,1721 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <title>VOLIUZ — Transparencia Ambiental y Comercio Sostenible</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @layer base {
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        body {
+          overscroll-behavior: none;
+        }
+        main > :first-child {
+          margin-top: 0 !important;
+        }
+        main > :last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-container": "#64a1ff",
+              "on-error-container": "#93000a",
+              "secondary-fixed": "#d6e3ff",
+              secondary: "#005db7",
+              "on-surface": "#1b1c1c",
+              "surface-container-low": "#f6f3f2",
+              "on-primary-container": "#cbffc2",
+              outline: "#707a6c",
+              "on-primary-fixed": "#002204",
+              surface: "#fbf9f8",
+              primary: "#0d631b",
+              "tertiary-container": "#127f26",
+              "primary-fixed": "#a3f69c",
+              "on-secondary-fixed-variant": "#00468c",
+              error: "#ba1a1a",
+              "primary-container": "#2e7d32",
+              "surface-container-high": "#eae8e7",
+              "surface-container-lowest": "#ffffff",
+              "surface-variant": "#e4e2e1",
+              "on-surface-variant": "#40493d",
+              "surface-container": "#f0eded",
+              "surface-container-highest": "#e4e2e1",
+              "on-primary": "#ffffff",
+              "on-tertiary-container": "#caffc2",
+              "primary-fixed-dim": "#88d982",
+              "inverse-on-surface": "#f3f0f0",
+              background: "#fbf9f8",
+              "on-error": "#ffffff",
+              "error-container": "#ffdad6",
+              "on-primary-fixed-variant": "#005312",
+              "outline-variant": "#bfcaba",
+              "on-tertiary-fixed-variant": "#005313",
+              "inverse-surface": "#303030",
+              "on-secondary-fixed": "#001b3d",
+              "tertiary-fixed": "#94f990",
+              "on-secondary-container": "#003670",
+              "surface-tint": "#1b6d24",
+              "inverse-primary": "#88d982",
+              "surface-dim": "#dcd9d9",
+              "surface-bright": "#fbf9f8",
+              "on-tertiary": "#ffffff",
+              "on-background": "#1b1c1c",
+              "on-secondary": "#ffffff",
+              "on-tertiary-fixed": "#002204",
+              "secondary-fixed-dim": "#a9c7ff",
+              tertiary: "#006419",
+              "tertiary-fixed-dim": "#78dc77",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              "space-xs": "0.25rem",
+              gutter: "1rem",
+              "space-md": "1rem",
+              "space-lg": "1.5rem",
+              "margin-md": "2rem",
+              "space-xl": "2.5rem",
+              "margin-lg": "3rem",
+              "gutter-lg": "2rem",
+              margin: "1rem",
+              "gutter-md": "1.5rem",
+              "space-sm": "0.5rem",
+            },
+            fontFamily: {
+              "headline-xl": ["Inter"],
+              "headline-lg": ["Inter"],
+              "body-lg": ["Inter"],
+              "metric-mono": ["Inter"],
+              "title-sm": ["Inter"],
+              "body-md": ["Inter"],
+              "body-sm": ["Inter"],
+              "headline-md": ["Inter"],
+              "label-md": ["Inter"],
+              "headline-xl-mobile": ["Inter"],
+              "label-sm": ["Inter"],
+              "headline-lg-mobile": ["Inter"],
+            },
+            fontSize: {
+              "headline-xl": [
+                "36px",
+                {
+                  lineHeight: "44px",
+                  letterSpacing: "-0.03em",
+                  fontWeight: "700",
+                },
+              ],
+              "headline-lg": [
+                "28px",
+                {
+                  lineHeight: "36px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "600",
+                },
+              ],
+              "body-lg": [
+                "16px",
+                { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" },
+              ],
+              "metric-mono": [
+                "24px",
+                {
+                  lineHeight: "28px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "title-sm": [
+                "16px",
+                {
+                  lineHeight: "22px",
+                  letterSpacing: "-0.005em",
+                  fontWeight: "600",
+                },
+              ],
+              "body-md": [
+                "14px",
+                { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" },
+              ],
+              "body-sm": [
+                "12px",
+                {
+                  lineHeight: "16px",
+                  letterSpacing: "0.01em",
+                  fontWeight: "400",
+                },
+              ],
+              "headline-md": [
+                "20px",
+                {
+                  lineHeight: "26px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "600",
+                },
+              ],
+              "label-md": [
+                "13px",
+                {
+                  lineHeight: "18px",
+                  letterSpacing: "0.01em",
+                  fontWeight: "500",
+                },
+              ],
+              "headline-xl-mobile": [
+                "28px",
+                {
+                  lineHeight: "34px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "label-sm": [
+                "11px",
+                {
+                  lineHeight: "14px",
+                  letterSpacing: "0.04em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-lg-mobile": [
+                "22px",
+                {
+                  lineHeight: "28px",
+                  letterSpacing: "-0.015em",
+                  fontWeight: "600",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-surface font-body-md text-on-surface antialiased">
+    <header
+      class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"
+    >
+      <div
+        class="h-20 max-w-7xl mx-auto px-margin lg:px-margin-lg flex items-center justify-between gap-gutter"
+      >
+        <div class="flex items-center gap-space-md">
+          <a class="flex items-center gap-space-sm" data-path="inicio" href="#"
+            ><div
+              class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center"
+            >
+              <span
+                class="material-symbols-outlined text-on-primary text-[20px]"
+                >eco</span
+              >
+            </div>
+            <div class="flex flex-col">
+              <span
+                class="font-headline-md text-headline-md tracking-tight text-on-surface leading-none"
+                >VOLIUZ</span
+              ><span
+                class="font-label-sm text-label-sm text-on-surface-variant leading-tight"
+                >Valle Circular Tech</span
+              >
+            </div></a
+          >
+          <div
+            class="hidden xl:flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm"
+          >
+            <span class="w-2 h-2 rounded-full bg-primary"></span
+            ><span>Transparencia Ambiental Cali & Valle</span>
+          </div>
+        </div>
+        <nav
+          class="hidden lg:flex items-center gap-space-xs p-space-xs"
+          data-active-classes="bg-primary-container text-on-primary rounded-lg"
+        >
+          <a
+            class="px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"
+            data-path="inicio"
+            href="#"
+            >Inicio</a
+          ><a
+            class="px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"
+            data-path="directorio-verde"
+            href="#"
+            >Directorio Verde</a
+          ><a
+            class="px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"
+            data-path="metodologia-co2e"
+            href="#"
+            >Metodología CO2e</a
+          ><a
+            aria-current="page"
+            class="px-space-md py-space-sm font-label-md transition-colors bg-primary-container text-on-primary rounded-lg"
+            data-path="portal-pymes"
+            href="#"
+            >Portal PyMEs</a
+          ><a
+            class="px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"
+            data-path="centro-de-impacto"
+            href="#"
+            >Centro de Impacto</a
+          >
+        </nav>
+        <div class="flex items-center gap-space-sm">
+          <div
+            class="hidden 2xl:flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm"
+          >
+            <span class="material-symbols-outlined text-[16px] text-primary"
+              >location_on</span
+            ><span>Cali, Valle del Cauca</span>
+          </div>
+          <a
+            class="hidden sm:inline-flex items-center px-space-md py-space-sm rounded-lg font-label-md text-label-md text-secondary hover:bg-secondary-fixed hover:text-on-secondary-fixed-variant transition-colors"
+            data-path="acceso-pyme"
+            href="#"
+            >Acceso PyME</a
+          ><a
+            class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-primary font-label-md text-label-md text-on-primary hover:bg-primary-container transition-colors shadow-sm"
+            data-path="extension-web"
+            href="#"
+            ><span class="material-symbols-outlined text-[16px]">extension</span
+            ><span>Instalar Extensión Web</span
+            ><span
+              class="px-space-xs rounded bg-on-primary/20 text-on-primary font-label-sm text-label-sm"
+              >v1.2</span
+            ></a
+          >
+          <div
+            class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"
+          >
+            <span class="material-symbols-outlined text-on-primary text-[18px]"
+              >person</span
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="w-full pt-20 bg-surface">
+      <div class="flex flex-col w-full">
+        <!-- Subtle decorative backdrop glow -->
+        <div class="relative w-full overflow-hidden">
+          <div
+            class="absolute -top-32 -left-32 w-96 h-96 bg-primary-fixed/30 rounded-full blur-3xl pointer-events-none"
+          ></div>
+          <div
+            class="absolute top-20 right-0 w-80 h-80 bg-secondary-fixed/30 rounded-full blur-3xl pointer-events-none"
+          ></div>
+          <!-- Editorial Header Section -->
+          <section
+            class="max-w-7xl mx-auto px-margin lg:px-margin-lg pt-space-xl pb-space-lg"
+          >
+            <div
+              class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg pb-space-lg"
+            >
+              <div class="max-w-3xl space-y-space-sm">
+                <div
+                  class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-primary font-label-sm text-label-sm"
+                >
+                  <span
+                    class="w-2 h-2 rounded-full bg-primary animate-pulse"
+                  ></span>
+                  <span
+                    >Convocatoria Abierta Valle del Cauca 2024 · Cohorte Verde
+                    V</span
+                  >
+                </div>
+                <h1
+                  class="font-headline-xl text-headline-xl text-on-surface tracking-tight"
+                >
+                  Tu emprendimiento sostenible merece ser visible
+                </h1>
+                <p
+                  class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl"
+                >
+                  Conectamos marcas regenerativas con consumidores conscientes a
+                  través de validación técnica, trazabilidad científica de
+                  emisiones y respaldo de la comunidad académica Unicatólica.
+                </p>
+              </div>
+              <!-- Academic & Regional Badges -->
+              <div class="flex items-center gap-space-md shrink-0">
+                <div
+                  class="flex items-center gap-space-sm p-space-sm px-space-md rounded-xl bg-surface-container-lowest shadow-sm"
+                >
+                  <div
+                    class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary"
+                  >
+                    <span class="material-symbols-outlined text-[22px]"
+                      >verified_user</span
+                    >
+                  </div>
+                  <div class="flex flex-col">
+                    <span
+                      class="font-label-sm text-label-sm text-on-surface font-semibold"
+                      >Validación de Datos</span
+                    >
+                    <span
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                      >Protocolo GHG & MinAmbiente</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="flex items-center gap-space-sm p-space-sm px-space-md rounded-xl bg-surface-container-lowest shadow-sm"
+                >
+                  <div
+                    class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary"
+                  >
+                    <span class="material-symbols-outlined text-[22px]"
+                      >hub</span
+                    >
+                  </div>
+                  <div class="flex flex-col">
+                    <span
+                      class="font-label-sm text-label-sm text-on-surface font-semibold"
+                      >Extensión VOLIUZ</span
+                    >
+                    <span
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                      >Sincronización en Ecommerce</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Navigation Tabs (Pestañas Superiores) -->
+            <div
+              class="flex items-center gap-space-xs p-space-xs rounded-xl bg-surface-container-high max-w-md shadow-sm"
+            >
+              <button
+                class="flex-1 py-space-sm px-space-md rounded-lg font-label-md text-label-md bg-surface-container-lowest text-primary shadow-sm font-semibold transition-all flex items-center justify-center gap-space-xs"
+                id="tab-apply"
+                onclick="switchTab('apply')"
+              >
+                <span class="material-symbols-outlined text-[18px]"
+                  >how_to_reg</span
+                >
+                <span>Formulario de Postulación</span>
+              </button>
+              <button
+                class="flex-1 py-space-sm px-space-md rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all flex items-center justify-center gap-space-xs"
+                id="tab-login"
+                onclick="switchTab('login')"
+              >
+                <span class="material-symbols-outlined text-[18px]"
+                  >lock_open</span
+                >
+                <span>Acceso para Registrados</span>
+              </button>
+            </div>
+          </section>
+          <!-- Stepper Progress Bar (5 Pasos Horizontales) -->
+          <section
+            class="max-w-7xl mx-auto px-margin lg:px-margin-lg pb-space-xl"
+          >
+            <div
+              class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm"
+            >
+              <div
+                class="grid grid-cols-1 md:grid-cols-5 gap-space-md relative"
+              >
+                <!-- Step 1 (Active) -->
+                <div
+                  class="flex items-center md:flex-col md:items-start gap-space-sm relative"
+                >
+                  <div class="flex items-center gap-space-sm">
+                    <div
+                      class="w-9 h-9 rounded-full bg-primary text-on-primary flex items-center justify-center font-metric-mono text-label-md shadow-sm"
+                    >
+                      1
+                    </div>
+                    <span
+                      class="md:hidden font-title-sm text-title-sm text-on-surface"
+                      >Información de la PyME</span
+                    >
+                  </div>
+                  <div class="flex flex-col mt-space-xs">
+                    <span
+                      class="hidden md:inline font-title-sm text-title-sm text-on-surface font-semibold"
+                      >1. Datos de la PyME</span
+                    >
+                    <span
+                      class="font-body-sm text-body-sm text-primary font-medium flex items-center gap-1"
+                    >
+                      <span
+                        class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"
+                      ></span>
+                      En diligenciamiento
+                    </span>
+                  </div>
+                </div>
+                <!-- Step 2 -->
+                <div
+                  class="flex items-center md:flex-col md:items-start gap-space-sm opacity-60"
+                >
+                  <div class="flex items-center gap-space-sm">
+                    <div
+                      class="w-9 h-9 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-metric-mono text-label-md"
+                    >
+                      2
+                    </div>
+                    <span
+                      class="md:hidden font-title-sm text-title-sm text-on-surface"
+                      >Detalle del Producto</span
+                    >
+                  </div>
+                  <div class="flex flex-col mt-space-xs">
+                    <span
+                      class="hidden md:inline font-title-sm text-title-sm text-on-surface font-semibold"
+                      >2. Detalle del Producto</span
+                    >
+                    <span
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                      >Línea o referencia</span
+                    >
+                  </div>
+                </div>
+                <!-- Step 3 -->
+                <div
+                  class="flex items-center md:flex-col md:items-start gap-space-sm opacity-60"
+                >
+                  <div class="flex items-center gap-space-sm">
+                    <div
+                      class="w-9 h-9 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-metric-mono text-label-md"
+                    >
+                      3
+                    </div>
+                    <span
+                      class="md:hidden font-title-sm text-title-sm text-on-surface"
+                      >Atributos Ambientales</span
+                    >
+                  </div>
+                  <div class="flex flex-col mt-space-xs">
+                    <span
+                      class="hidden md:inline font-title-sm text-title-sm text-on-surface font-semibold"
+                      >3. Atributos Ambientales</span
+                    >
+                    <span
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                      >CO2e y circularidad</span
+                    >
+                  </div>
+                </div>
+                <!-- Step 4 -->
+                <div
+                  class="flex items-center md:flex-col md:items-start gap-space-sm opacity-60"
+                >
+                  <div class="flex items-center gap-space-sm">
+                    <div
+                      class="w-9 h-9 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-metric-mono text-label-md"
+                    >
+                      4
+                    </div>
+                    <span
+                      class="md:hidden font-title-sm text-title-sm text-on-surface"
+                      >Documentación</span
+                    >
+                  </div>
+                  <div class="flex flex-col mt-space-xs">
+                    <span
+                      class="hidden md:inline font-title-sm text-title-sm text-on-surface font-semibold"
+                      >4. Respaldo Técnico</span
+                    >
+                    <span
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                      >Facturas o certificados</span
+                    >
+                  </div>
+                </div>
+                <!-- Step 5 -->
+                <div
+                  class="flex items-center md:flex-col md:items-start gap-space-sm opacity-60"
+                >
+                  <div class="flex items-center gap-space-sm">
+                    <div
+                      class="w-9 h-9 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-metric-mono text-label-md"
+                    >
+                      5
+                    </div>
+                    <span
+                      class="md:hidden font-title-sm text-title-sm text-on-surface"
+                      >Confirmación</span
+                    >
+                  </div>
+                  <div class="flex flex-col mt-space-xs">
+                    <span
+                      class="hidden md:inline font-title-sm text-title-sm text-on-surface font-semibold"
+                      >5. Confirmación</span
+                    >
+                    <span
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                      >Emisión de dictamen</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Metric progress line -->
+              <div
+                class="mt-space-md w-full bg-surface-container h-1.5 rounded-full overflow-hidden"
+              >
+                <div
+                  class="bg-primary h-full rounded-full transition-all duration-500"
+                  style="width: 20%"
+                ></div>
+              </div>
+            </div>
+          </section>
+          <!-- Main Content Area: 2 Columns Split Layout -->
+          <section
+            class="max-w-7xl mx-auto px-margin lg:px-margin-lg pb-space-xl"
+          >
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-start"
+            >
+              <!-- Left Main Column (2/3 -> 8 Cols) -->
+              <div class="lg:col-span-8 space-y-space-lg">
+                <!-- Tab 1: Application Form View -->
+                <div
+                  class="bg-surface-container-lowest p-space-lg lg:p-space-xl rounded-xl shadow-sm space-y-space-lg"
+                  id="view-apply"
+                >
+                  <div class="flex items-center justify-between pb-space-sm">
+                    <div>
+                      <span
+                        class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold"
+                        >Paso 1 de 5 · Registro Inicial</span
+                      >
+                      <h2
+                        class="font-headline-lg text-headline-lg text-on-surface"
+                      >
+                        Identificación del Emprendimiento
+                      </h2>
+                    </div>
+                    <span
+                      class="px-space-md py-space-xs rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm"
+                    >
+                      Valle del Cauca
+                    </span>
+                  </div>
+                  <form
+                    class="space-y-space-md"
+                    onsubmit="
+                      event.preventDefault();
+                      nextStepFeedback();
+                    "
+                  >
+                    <!-- Legal and Trade Name -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+                      <div class="flex flex-col gap-space-xs">
+                        <label
+                          class="font-label-md text-label-md text-on-surface font-medium flex items-center justify-between"
+                        >
+                          <span>Nombre Comercial de la Marca *</span>
+                          <span class="text-on-surface-variant text-[11px]"
+                            >Como es conocido</span
+                          >
+                        </label>
+                        <input
+                          class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-on-surface text-body-md shadow-sm focus:outline-none focus:bg-surface-container-low transition-colors"
+                          placeholder="Ej. BioEmpaques del Valle"
+                          required=""
+                          type="text"
+                        />
+                      </div>
+                      <div class="flex flex-col gap-space-xs">
+                        <label
+                          class="font-label-md text-label-md text-on-surface font-medium"
+                        >
+                          Representante Legal / Titular *
+                        </label>
+                        <input
+                          class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-on-surface text-body-md shadow-sm focus:outline-none focus:bg-surface-container-low transition-colors"
+                          placeholder="Nombre completo"
+                          required=""
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                    <!-- NIT and Email -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+                      <div class="flex flex-col gap-space-xs">
+                        <label
+                          class="font-label-md text-label-md text-on-surface font-medium"
+                        >
+                          NIT o Cédula de Ciudadanía *
+                        </label>
+                        <input
+                          class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-on-surface text-body-md shadow-sm focus:outline-none focus:bg-surface-container-low transition-colors"
+                          placeholder="Ej. 901.452.880-1 o CC"
+                          required=""
+                          type="text"
+                        />
+                      </div>
+                      <div class="flex flex-col gap-space-xs">
+                        <label
+                          class="font-label-md text-label-md text-on-surface font-medium"
+                        >
+                          Correo Electrónico Institucional *
+                        </label>
+                        <input
+                          class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-on-surface text-body-md shadow-sm focus:outline-none focus:bg-surface-container-low transition-colors"
+                          placeholder="contacto@tuempresa.co"
+                          required=""
+                          type="email"
+                        />
+                      </div>
+                    </div>
+                    <!-- Phone and Municipality -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+                      <div class="flex flex-col gap-space-xs">
+                        <label
+                          class="font-label-md text-label-md text-on-surface font-medium flex items-center justify-between"
+                        >
+                          <span>Teléfono / WhatsApp Comercial *</span>
+                          <span class="text-on-surface-variant text-[11px]"
+                            >+57 Colombia</span
+                          >
+                        </label>
+                        <input
+                          class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-on-surface text-body-md shadow-sm focus:outline-none focus:bg-surface-container-low transition-colors"
+                          placeholder="315 000 0000"
+                          required=""
+                          type="tel"
+                        />
+                      </div>
+                      <div class="flex flex-col gap-space-xs">
+                        <label
+                          class="font-label-md text-label-md text-on-surface font-medium"
+                        >
+                          Municipio del Valle del Cauca *
+                        </label>
+                        <select
+                          class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-on-surface text-body-md shadow-sm focus:outline-none focus:bg-surface-container-low transition-colors"
+                          required=""
+                        >
+                          <option disabled="" selected="" value="">
+                            Selecciona tu municipio...
+                          </option>
+                          <option value="cali">Santiago de Cali</option>
+                          <option value="yumbo">
+                            Yumbo (Corredor Industrial)
+                          </option>
+                          <option value="palmira">Palmira</option>
+                          <option value="jamundi">Jamundí</option>
+                          <option value="tulua">Tuluá</option>
+                          <option value="buga">Guadalajara de Buga</option>
+                          <option value="cartago">Cartago</option>
+                          <option value="buenaventura">
+                            Buenaventura (Nodo Pacífico)
+                          </option>
+                          <option value="candelaria">Candelaria</option>
+                          <option value="dapa">La Cumbre / Dapa</option>
+                        </select>
+                      </div>
+                    </div>
+                    <!-- Web / Instagram and Production Category -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+                      <div class="flex flex-col gap-space-xs">
+                        <label
+                          class="font-label-md text-label-md text-on-surface font-medium"
+                        >
+                          Sitio Web Oficial o Instagram Comercial
+                        </label>
+                        <input
+                          class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-on-surface text-body-md shadow-sm focus:outline-none focus:bg-surface-container-low transition-colors"
+                          placeholder="https://instagram.com/tumarcasostenible"
+                          type="text"
+                        />
+                      </div>
+                      <div class="flex flex-col gap-space-xs">
+                        <label
+                          class="font-label-md text-label-md text-on-surface font-medium"
+                        >
+                          Categoría Productiva Principal *
+                        </label>
+                        <select
+                          class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-on-surface text-body-md shadow-sm focus:outline-none focus:bg-surface-container-low transition-colors"
+                          required=""
+                        >
+                          <option disabled="" selected="" value="">
+                            Seleccione categoría...
+                          </option>
+                          <option value="alimentos">
+                            Agroindustria & Alimentos Regenerativos
+                          </option>
+                          <option value="empaques">
+                            Empaques & Biomateriales Compostables
+                          </option>
+                          <option value="moda">
+                            Moda Circular, Fibras & Textiles Recuperados
+                          </option>
+                          <option value="aseo">
+                            Aseo Ecológico & Química Verde
+                          </option>
+                          <option value="energia">
+                            Eficiencia Energética & Tecnología Limpia
+                          </option>
+                          <option value="artesanias">
+                            Bio-Artesanías & Conservación Biocultural
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                    <!-- Scope of Emissions Readiness (Quick Selector) -->
+                    <div
+                      class="p-space-md rounded-xl bg-surface-container-low space-y-space-sm"
+                    >
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="font-title-sm text-title-sm text-on-surface font-semibold"
+                          >Nivel Actual de Medición Ambiental</span
+                        >
+                        <span
+                          class="font-label-sm text-label-sm text-primary font-medium"
+                          >Sin costo en fase piloto</span
+                        >
+                      </div>
+                      <div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+                        <label
+                          class="flex items-center gap-space-xs p-space-sm rounded-lg bg-surface-container-lowest cursor-pointer hover:bg-surface transition-colors"
+                        >
+                          <input
+                            checked=""
+                            class="text-primary focus:ring-0"
+                            name="readiness"
+                            type="radio"
+                            value="none"
+                          />
+                          <span
+                            class="font-body-sm text-body-sm text-on-surface"
+                            >Sin cálculo previo</span
+                          >
+                        </label>
+                        <label
+                          class="flex items-center gap-space-xs p-space-sm rounded-lg bg-surface-container-lowest cursor-pointer hover:bg-surface transition-colors"
+                        >
+                          <input
+                            class="text-primary focus:ring-0"
+                            name="readiness"
+                            type="radio"
+                            value="estimate"
+                          />
+                          <span
+                            class="font-body-sm text-body-sm text-on-surface"
+                            >Estimación interna</span
+                          >
+                        </label>
+                        <label
+                          class="flex items-center gap-space-xs p-space-sm rounded-lg bg-surface-container-lowest cursor-pointer hover:bg-surface transition-colors"
+                        >
+                          <input
+                            class="text-primary focus:ring-0"
+                            name="readiness"
+                            type="radio"
+                            value="certified"
+                          />
+                          <span
+                            class="font-body-sm text-body-sm text-on-surface"
+                            >Certificado por terceros</span
+                          >
+                        </label>
+                      </div>
+                    </div>
+                    <!-- Consent & Habeas Data Confirmation -->
+                    <div class="flex items-start gap-space-sm pt-space-xs">
+                      <input
+                        class="mt-1 text-primary focus:ring-0 rounded"
+                        id="habeas"
+                        required=""
+                        type="checkbox"
+                      />
+                      <label
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                        for="habeas"
+                      >
+                        Declaro que la información aportada es fidedigna y
+                        autorizo a VOLIUZ y al Semillero de Sostenibilidad
+                        Unicatólica a tratar mis datos institucionales conforme
+                        a la Ley 1581 de 2012 para el proceso de auditoría y
+                        exhibición en el Directorio Verde.
+                      </label>
+                    </div>
+                    <!-- Submit Actions -->
+                    <div
+                      class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-md"
+                    >
+                      <div
+                        class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm"
+                      >
+                        <span
+                          class="material-symbols-outlined text-[18px] text-primary"
+                          >lock</span
+                        >
+                        <span
+                          >Tus datos están protegidos y no serán transferidos
+                          comercialmente.</span
+                        >
+                      </div>
+                      <button
+                        class="w-full sm:w-auto px-space-xl py-space-sm bg-primary-container text-on-primary font-label-md text-label-md rounded-lg hover:bg-primary transition-all shadow-md flex items-center justify-center gap-space-xs font-semibold"
+                        type="submit"
+                      >
+                        <span>Continuar al Paso 2: Detalle de Producto</span>
+                        <span class="material-symbols-outlined text-[18px]"
+                          >arrow_forward</span
+                        >
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <!-- Tab 2: Existing User Login View (Hidden by default, toggled via JS) -->
+                <div
+                  class="hidden bg-surface-container-lowest p-space-lg lg:p-space-xl rounded-xl shadow-sm space-y-space-lg"
+                  id="view-login"
+                >
+                  <div class="pb-space-sm">
+                    <span
+                      class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold"
+                      >Portal de Autogestión</span
+                    >
+                    <h2
+                      class="font-headline-lg text-headline-lg text-on-surface"
+                    >
+                      Acceso a Emprendedores Registrados
+                    </h2>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant"
+                    >
+                      Gestiona tus fichas de producto validadas, descarga el
+                      distintivo digital QR y revisa el informe semestral
+                      emitido por el semillero Unicatólica.
+                    </p>
+                  </div>
+                  <form
+                    class="space-y-space-md max-w-lg"
+                    onsubmit="
+                      event.preventDefault();
+                      alert('Iniciando sesión segura en Nodo VOLIUZ Valle...');
+                    "
+                  >
+                    <div class="flex flex-col gap-space-xs">
+                      <label
+                        class="font-label-md text-label-md text-on-surface font-medium"
+                        >Correo Electrónico Registrado</label
+                      >
+                      <input
+                        class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-on-surface text-body-md shadow-sm focus:outline-none focus:bg-surface-container-low"
+                        placeholder="gerencia@tumarcasostenible.co"
+                        required=""
+                        type="email"
+                      />
+                    </div>
+                    <div class="flex flex-col gap-space-xs">
+                      <div class="flex items-center justify-between">
+                        <label
+                          class="font-label-md text-label-md text-on-surface font-medium"
+                          >Contraseña o Código de Validación</label
+                        >
+                        <a
+                          class="font-body-sm text-body-sm text-secondary hover:underline"
+                          href="#"
+                          >¿Olvidaste tu clave?</a
+                        >
+                      </div>
+                      <input
+                        class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-on-surface text-body-md shadow-sm focus:outline-none focus:bg-surface-container-low"
+                        placeholder="••••••••••••"
+                        required=""
+                        type="password"
+                      />
+                    </div>
+                    <button
+                      class="w-full py-space-sm bg-secondary text-on-secondary font-label-md text-label-md rounded-lg hover:bg-on-secondary-container transition-all shadow-md font-semibold flex items-center justify-center gap-space-xs"
+                      type="submit"
+                    >
+                      <span class="material-symbols-outlined text-[18px]"
+                        >verified</span
+                      >
+                      <span>Ingresar al Tablero de Emisiones PyME</span>
+                    </button>
+                  </form>
+                </div>
+                <!-- Micro-Insight Card: Real-time validation queue -->
+                <div
+                  class="bg-surface-container-low p-space-md rounded-xl flex items-center justify-between flex-wrap gap-space-md"
+                >
+                  <div class="flex items-center gap-space-md">
+                    <div
+                      class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center text-on-primary-fixed"
+                    >
+                      <span class="material-symbols-outlined text-[24px]"
+                        >speed</span
+                      >
+                    </div>
+                    <div>
+                      <h3
+                        class="font-title-sm text-title-sm text-on-surface font-semibold"
+                      >
+                        Tiempo promedio de validación técnica
+                      </h3>
+                      <p
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                      >
+                        3 a 5 días hábiles con el equipo de ingeniería ambiental
+                        Unicatólica
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-lowest shadow-sm font-metric-mono text-label-md text-primary"
+                  >
+                    <span class="material-symbols-outlined text-[16px]"
+                      >schedule</span
+                    >
+                    <span>48h Respuesta Inicial</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Right Sidebar Column (1/3 -> 4 Cols) -->
+              <div class="lg:col-span-4 space-y-space-md">
+                <!-- Benefits Card (¿Por qué certificar con VOLIUZ y Unicatólica?) -->
+                <div
+                  class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md"
+                >
+                  <div class="flex items-center gap-space-sm">
+                    <div
+                      class="w-8 h-8 rounded-lg bg-primary-fixed flex items-center justify-center text-on-primary-fixed"
+                    >
+                      <span class="material-symbols-outlined text-[18px]"
+                        >workspace_premium</span
+                      >
+                    </div>
+                    <h3
+                      class="font-title-sm text-title-sm text-on-surface font-bold"
+                    >
+                      ¿Por qué certificar con VOLIUZ y Unicatólica?
+                    </h3>
+                  </div>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+                  >
+                    Un sello con respaldo científico no es publicidad: es rigor
+                    metrológico que blinda tu propuesta frente a acusaciones de
+                    greenwashing.
+                  </p>
+                  <ul class="space-y-space-md pt-space-xs">
+                    <li class="flex items-start gap-space-sm">
+                      <div
+                        class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center text-primary shrink-0 mt-0.5"
+                      >
+                        <span class="material-symbols-outlined text-[14px]"
+                          >calculate</span
+                        >
+                      </div>
+                      <div>
+                        <h4
+                          class="font-label-md text-label-md text-on-surface font-semibold"
+                        >
+                          Cálculo de Huella Respaldado
+                        </h4>
+                        <p
+                          class="font-body-sm text-body-sm text-on-surface-variant"
+                        >
+                          Factores de emisión validados según matriz regional
+                          CVC y lineamientos UPME.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="flex items-start gap-space-sm">
+                      <div
+                        class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center text-primary shrink-0 mt-0.5"
+                      >
+                        <span class="material-symbols-outlined text-[14px]"
+                          >travel_explore</span
+                        >
+                      </div>
+                      <div>
+                        <h4
+                          class="font-label-md text-label-md text-on-surface font-semibold"
+                        >
+                          Visibilidad en el Directorio Verde
+                        </h4>
+                        <p
+                          class="font-body-sm text-body-sm text-on-surface-variant"
+                        >
+                          Presencia destacada ante más de 12.000 compradores
+                          éticos activos en el Valle.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="flex items-start gap-space-sm">
+                      <div
+                        class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center text-primary shrink-0 mt-0.5"
+                      >
+                        <span class="material-symbols-outlined text-[14px]"
+                          >extension</span
+                        >
+                      </div>
+                      <div>
+                        <h4
+                          class="font-label-md text-label-md text-on-surface font-semibold"
+                        >
+                          Extensión de Navegador Activa
+                        </h4>
+                        <p
+                          class="font-body-sm text-body-sm text-on-surface-variant"
+                        >
+                          Tus fichas técnicas aparecen directamente cuando los
+                          usuarios navegan en marketplaces aliados.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="flex items-start gap-space-sm">
+                      <div
+                        class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center text-primary shrink-0 mt-0.5"
+                      >
+                        <span class="material-symbols-outlined text-[14px]"
+                          >money_off</span
+                        >
+                      </div>
+                      <div>
+                        <h4
+                          class="font-label-md text-label-md text-on-surface font-semibold"
+                        >
+                          Sin Comisión en Ventas
+                        </h4>
+                        <p
+                          class="font-body-sm text-body-sm text-on-surface-variant"
+                        >
+                          No cobramos intermediación. El 100% de la transacción
+                          va directo a tu pasarela y negocio local.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                  <!-- Image placeholder illustrating local producer and validation -->
+                  <div class="pt-space-xs">
+                    <img
+                      class="w-full h-36 rounded-lg object-cover shadow-inner"
+                      data-alt="Emprendedora colombiana de Santiago de Cali revisando empaques biodegradables de caña de azúcar en un taller limpio y luminoso con luz natural del Valle del Cauca, paleta de colores verdes orgánicos y tonos neutros, estética profesional e innovadora de comercio justo."
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBM0-JHgaqOueTzM-gVwzOy9EM7mQER4AdIsD6q24mNRtSf5InpfpmZ2SL_iJDpoF3h94L_qzjvjeN3z_v9RLuJZIlo4d72nOAarH3GecW-DzJUNFq7I3DekCTeamN48JFyaDP5SI3Nu3vOEFTIqfsSpK0IXlfGAaBnQZFoPrtWwt0Sqc-tffwVLhvtsQMVjkXGUeSdk6AfdkgvIJwjJUUYWhftWg5jdlL1UK0KdzY"
+                    />
+                  </div>
+                </div>
+                <!-- Confidentiality & Legal Guarantee Card (Ley 1581) -->
+                <div
+                  class="bg-surface-container-low p-space-lg rounded-xl space-y-space-sm"
+                >
+                  <div class="flex items-center gap-space-xs text-secondary">
+                    <span class="material-symbols-outlined text-[20px]"
+                      >shield</span
+                    >
+                    <span
+                      class="font-label-sm text-label-sm font-bold uppercase tracking-wider"
+                      >Cumplimiento Legal Garantizado</span
+                    >
+                  </div>
+                  <h4
+                    class="font-title-sm text-title-sm text-on-surface font-semibold"
+                  >
+                    Garantía de Confidencialidad y Habeas Data
+                  </h4>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+                  >
+                    Tus secretos industriales, fórmulas de biomateriales y
+                    listados de proveedores están amparados bajo acuerdos
+                    estrictos de confidencialidad académica. En concordancia con
+                    la <strong>Ley Estatutaria 1581 de 2012</strong> y el
+                    Decreto 1377 de 2013 de la República de Colombia, tus datos
+                    nunca serán compartidos ni monetizados a terceros.
+                  </p>
+                  <div
+                    class="pt-space-xs flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant"
+                  >
+                    <span class="w-2 h-2 rounded-full bg-secondary"></span>
+                    <span
+                      >Custodia: Servidores Criptográficos Regionales Cali</span
+                    >
+                  </div>
+                </div>
+                <!-- Direct Support Assistance Card -->
+                <div
+                  class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center gap-space-md"
+                >
+                  <div
+                    class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed shrink-0"
+                  >
+                    <span class="material-symbols-outlined text-[20px]"
+                      >contact_support</span
+                    >
+                  </div>
+                  <div class="flex flex-col">
+                    <span
+                      class="font-label-md text-label-md text-on-surface font-semibold"
+                      >¿Dudas con tu postulación?</span
+                    >
+                    <span
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                      >Escribe al equipo del semillero:</span
+                    >
+                    <a
+                      class="font-label-sm text-label-sm text-secondary hover:underline"
+                      href="mailto:soporte-pyme@voliuz.unicatolica.edu.co"
+                      >soporte-pyme@voliuz.unicatolica.edu.co</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Ethical Differentiation Section (Atributos Declarados vs. Verificados) -->
+          <section
+            class="max-w-7xl mx-auto px-margin lg:px-margin-lg pb-space-xl"
+          >
+            <div
+              class="bg-surface-container-lowest p-space-lg lg:p-space-xl rounded-xl shadow-sm space-y-space-lg"
+            >
+              <div
+                class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pb-space-xs"
+              >
+                <div class="space-y-space-xs max-w-2xl">
+                  <div
+                    class="inline-flex items-center gap-space-xs text-primary font-label-sm text-label-sm"
+                  >
+                    <span class="material-symbols-outlined text-[16px]"
+                      >balance</span
+                    >
+                    <span
+                      >Diferenciación Ética y Transparencia sin
+                      Greenwashing</span
+                    >
+                  </div>
+                  <h2 class="font-headline-lg text-headline-lg text-on-surface">
+                    Claridad total para el consumidor: Dos niveles de distintivo
+                  </h2>
+                  <p class="font-body-md text-body-md text-on-surface-variant">
+                    En VOLIUZ distinguimos con absoluta honestidad lo que una
+                    PyME declara voluntariamente versus lo que ha sido
+                    verificado en laboratorio o auditoría documental por el
+                    Semillero de Sostenibilidad Unicatólica.
+                  </p>
+                </div>
+                <div
+                  class="flex items-center gap-space-sm p-space-sm px-space-md rounded-xl bg-surface-container-low shrink-0"
+                >
+                  <span
+                    class="material-symbols-outlined text-primary text-[24px]"
+                    >policy</span
+                  >
+                  <div class="flex flex-col">
+                    <span
+                      class="font-label-sm text-label-sm font-semibold text-on-surface"
+                      >Marco Ético</span
+                    >
+                    <span
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                      >Estatuto Ley 1480 / 2011</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter-md">
+                <!-- Column 1: Atributos Declarados -->
+                <div
+                  class="p-space-lg rounded-xl bg-surface-container-low space-y-space-md relative overflow-hidden"
+                >
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="px-space-md py-space-xs rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold flex items-center gap-1"
+                    >
+                      <span
+                        class="w-2 h-2 rounded-full bg-on-surface-variant"
+                      ></span>
+                      Nivel 1 · Declarado
+                    </span>
+                    <span
+                      class="font-metric-mono text-label-sm text-on-surface-variant"
+                      >AUTODECLARACIÓN</span
+                    >
+                  </div>
+                  <div>
+                    <h3
+                      class="font-headline-md text-headline-md text-on-surface"
+                    >
+                      Atributos Declarados por la PyME
+                    </h3>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant mt-space-xs"
+                    >
+                      Información suministrada por el productor en su registro
+                      inicial antes de la visita técnica o revisión de
+                      evidencia.
+                    </p>
+                  </div>
+                  <div class="space-y-space-sm pt-space-xs">
+                    <div
+                      class="flex items-start gap-space-sm text-body-sm text-on-surface"
+                    >
+                      <span
+                        class="material-symbols-outlined text-outline text-[18px] shrink-0 mt-0.5"
+                        >check</span
+                      >
+                      <span
+                        >Manifiesto de insumos locales y procedencia municipal
+                        (ej. Caña de Palmira).</span
+                      >
+                    </div>
+                    <div
+                      class="flex items-start gap-space-sm text-body-sm text-on-surface"
+                    >
+                      <span
+                        class="material-symbols-outlined text-outline text-[18px] shrink-0 mt-0.5"
+                        >check</span
+                      >
+                      <span
+                        >Declaración de ausencia de plásticos de un solo uso en
+                        empaque terciario.</span
+                      >
+                    </div>
+                    <div
+                      class="flex items-start gap-space-sm text-body-sm text-on-surface"
+                    >
+                      <span
+                        class="material-symbols-outlined text-outline text-[18px] shrink-0 mt-0.5"
+                        >check</span
+                      >
+                      <span
+                        >Procesos artesanales o de baja huella hídrica
+                        auto-reportados.</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Visual representation of declared pill -->
+                  <div
+                    class="p-space-sm rounded-lg bg-surface-container-lowest flex items-center justify-between"
+                  >
+                    <div class="flex items-center gap-space-xs">
+                      <span
+                        class="w-3 h-3 rounded-full bg-surface-container-highest"
+                      ></span>
+                      <span
+                        class="font-body-sm text-body-sm font-medium text-on-surface"
+                        >Etiqueta VOLIUZ:</span
+                      >
+                    </div>
+                    <span
+                      class="px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm"
+                    >
+                      Atributo Auto-Declarado PyME
+                    </span>
+                  </div>
+                </div>
+                <!-- Column 2: Atributos Verificados -->
+                <div
+                  class="p-space-lg rounded-xl bg-primary-fixed/20 space-y-space-md relative overflow-hidden"
+                >
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="px-space-md py-space-xs rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold flex items-center gap-1"
+                    >
+                      <span
+                        class="w-2 h-2 rounded-full bg-primary-fixed animate-ping"
+                      ></span>
+                      Nivel 2 · Verificado
+                    </span>
+                    <span
+                      class="font-metric-mono text-label-sm text-primary font-bold"
+                      >SELLO UNICATÓLICA</span
+                    >
+                  </div>
+                  <div>
+                    <h3
+                      class="font-headline-md text-headline-md text-on-surface"
+                    >
+                      Atributos Verificados por el Semillero
+                    </h3>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant mt-space-xs"
+                    >
+                      Certificación respaldada mediante auditoría de facturas de
+                      origen, cálculo CO2e con factores UPME y ensayos de
+                      compostabilidad.
+                    </p>
+                  </div>
+                  <div class="space-y-space-sm pt-space-xs">
+                    <div
+                      class="flex items-start gap-space-sm text-body-sm text-on-surface"
+                    >
+                      <span
+                        class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5"
+                        >verified</span
+                      >
+                      <span
+                        ><strong>Factor CO2e Exacto:</strong> Emisiones
+                        auditadas por unidad de producto final.</span
+                      >
+                    </div>
+                    <div
+                      class="flex items-start gap-space-sm text-body-sm text-on-surface"
+                    >
+                      <span
+                        class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5"
+                        >verified</span
+                      >
+                      <span
+                        ><strong>Biodegradabilidad Comprobada:</strong> Ficha
+                        técnica validada con laboratorios regionales.</span
+                      >
+                    </div>
+                    <div
+                      class="flex items-start gap-space-sm text-body-sm text-on-surface"
+                    >
+                      <span
+                        class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5"
+                        >verified</span
+                      >
+                      <span
+                        ><strong>Distintivo Dinámico QR:</strong> Código público
+                        inmutable para verificación del consumidor.</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Visual representation of verified badge -->
+                  <div
+                    class="p-space-sm rounded-lg bg-surface-container-lowest flex items-center justify-between"
+                  >
+                    <div class="flex items-center gap-space-xs">
+                      <span class="w-3 h-3 rounded-full bg-primary"></span>
+                      <span
+                        class="font-body-sm text-body-sm font-medium text-on-surface"
+                        >Etiqueta VOLIUZ:</span
+                      >
+                    </div>
+                    <span
+                      class="px-space-sm py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center gap-1"
+                    >
+                      <span class="material-symbols-outlined text-[12px]"
+                        >verified</span
+                      >
+                      Validado Unicatólica
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <!-- Academic Trust Banner Footer -->
+              <div
+                class="p-space-md rounded-xl bg-surface-container flex flex-col md:flex-row items-center justify-between gap-space-md"
+              >
+                <div class="flex items-center gap-space-md">
+                  <div
+                    class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm"
+                  >
+                    <span class="material-symbols-outlined text-[22px]"
+                      >science</span
+                    >
+                  </div>
+                  <div>
+                    <p
+                      class="font-title-sm text-title-sm text-on-surface font-semibold"
+                    >
+                      Semillero en Economía Circular e Ingeniería Ambiental
+                    </p>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                    >
+                      Lumen Gentium — Institución Universitaria Colegiada Cali
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-space-md">
+                  <span
+                    class="font-label-sm text-label-sm text-on-surface-variant"
+                    >Metodología homologada ISO 14064-1 & GHG Protocol</span
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Regional Call to Action Section -->
+          <section
+            class="max-w-7xl mx-auto px-margin lg:px-margin-lg pb-space-xl"
+          >
+            <div
+              class="bg-primary-container text-on-primary p-space-lg lg:p-space-xl rounded-xl shadow-lg relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-space-lg"
+            >
+              <div class="space-y-space-xs max-w-xl z-10">
+                <span
+                  class="px-space-sm py-space-xs rounded bg-on-primary/20 text-on-primary font-label-sm text-label-sm uppercase tracking-wide"
+                >
+                  Impulsa el Valle Sostenible
+                </span>
+                <h3 class="font-headline-lg text-headline-lg text-on-primary">
+                  ¿Listo para someter tu primer lote de productos a evaluación?
+                </h3>
+                <p class="font-body-md text-body-md text-on-primary/90">
+                  Únete a más de 45 emprendimientos vallecaucanos que ya están
+                  demostrando su huella con total transparencia técnica.
+                </p>
+              </div>
+              <div
+                class="flex flex-col sm:flex-row gap-space-sm shrink-0 z-10 w-full sm:w-auto"
+              >
+                <button
+                  class="px-space-xl py-space-sm bg-surface-container-lowest text-primary font-label-md text-label-md rounded-lg hover:bg-surface-container transition-all shadow-md font-semibold text-center"
+                  onclick="
+                    document
+                      .getElementById('view-apply')
+                      .scrollIntoView({ behavior: 'smooth' })
+                  "
+                >
+                  Comenzar Postulación Gratuita
+                </button>
+                <a
+                  class="px-space-lg py-space-sm bg-primary/40 text-on-primary font-label-md text-label-md rounded-lg hover:bg-primary/60 transition-all font-semibold text-center flex items-center justify-center gap-space-xs"
+                  data-path="metodologia-co2e"
+                  href="#"
+                >
+                  <span class="material-symbols-outlined text-[16px]"
+                    >menu_book</span
+                  >
+                  <span>Ver Fórmulas Técnicas</span>
+                </a>
+              </div>
+              <!-- Ambient decorative graphic -->
+              <div
+                class="absolute -right-10 -bottom-10 w-64 h-64 bg-on-primary/10 rounded-full blur-2xl pointer-events-none"
+              ></div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <script>
+        function switchTab(mode) {
+          const tabApply = document.getElementById("tab-apply");
+          const tabLogin = document.getElementById("tab-login");
+          const viewApply = document.getElementById("view-apply");
+          const viewLogin = document.getElementById("view-login");
+
+          if (mode === "apply") {
+            tabApply.className =
+              "flex-1 py-space-sm px-space-md rounded-lg font-label-md text-label-md bg-surface-container-lowest text-primary shadow-sm font-semibold transition-all flex items-center justify-center gap-space-xs";
+            tabLogin.className =
+              "flex-1 py-space-sm px-space-md rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all flex items-center justify-center gap-space-xs";
+            viewApply.classList.remove("hidden");
+            viewLogin.classList.add("hidden");
+          } else {
+            tabLogin.className =
+              "flex-1 py-space-sm px-space-md rounded-lg font-label-md text-label-md bg-surface-container-lowest text-secondary shadow-sm font-semibold transition-all flex items-center justify-center gap-space-xs";
+            tabApply.className =
+              "flex-1 py-space-sm px-space-md rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all flex items-center justify-center gap-space-xs";
+            viewLogin.classList.remove("hidden");
+            viewApply.classList.add("hidden");
+          }
+        }
+
+        function nextStepFeedback() {
+          alert(
+            "Información de la empresa guardada exitosamente. Avanzando al Paso 2: Detalle del Producto y Línea de Fabricación...",
+          );
+        }
+      </script>
+    </main>
+    <footer class="w-full bg-surface-container-low text-on-surface-variant">
+      <div class="max-w-7xl mx-auto px-margin lg:px-margin-lg py-space-xl">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-lg pb-space-xl"
+        >
+          <div class="flex flex-col gap-space-md">
+            <div class="flex items-center gap-space-sm">
+              <div
+                class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center"
+              >
+                <span
+                  class="material-symbols-outlined text-on-primary text-[18px]"
+                  >eco</span
+                >
+              </div>
+              <span
+                class="font-headline-md text-headline-md tracking-tight text-on-surface"
+                >VOLIUZ</span
+              >
+            </div>
+            <p
+              class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+            >
+              Ecosistema de datos abiertos y validación técnica para la
+              transparencia en huella de carbono y reciclabilidad regional en el
+              Valle del Cauca.
+            </p>
+            <div
+              class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-lowest"
+            >
+              <span class="material-symbols-outlined text-secondary text-[20px]"
+                >school</span
+              >
+              <div class="flex flex-col">
+                <span
+                  class="font-label-sm text-label-sm text-on-surface font-bold"
+                  >Alianza Académica</span
+                ><span class="font-body-sm text-body-sm text-on-surface-variant"
+                  >Unicatólica — Lumen Gentium</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-space-md">
+            <h3 class="font-title-sm text-title-sm text-on-surface">
+              Marco Normativo Colombia
+            </h3>
+            <ul class="flex flex-col gap-space-sm font-body-sm text-body-sm">
+              <li class="flex items-center gap-space-xs">
+                <span class="material-symbols-outlined text-[16px] text-primary"
+                  >verified</span
+                ><span>Ley 1480 de 2011 (Estatuto del Consumidor)</span>
+              </li>
+              <li class="flex items-center gap-space-xs">
+                <span class="material-symbols-outlined text-[16px] text-primary"
+                  >verified</span
+                ><span>Ley 1672 de 2013 (Gestión RAEE)</span>
+              </li>
+              <li class="flex items-center gap-space-xs">
+                <span class="material-symbols-outlined text-[16px] text-primary"
+                  >verified</span
+                ><span>Ley 1581 de 2012 (Protección Habeas Data)</span>
+              </li>
+              <li class="flex items-center gap-space-xs">
+                <span class="material-symbols-outlined text-[16px] text-primary"
+                  >verified</span
+                ><span>ODS 12: Producción y Consumo Responsable</span>
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-space-md">
+            <h3 class="font-title-sm text-title-sm text-on-surface">
+              Ecosistema Regional
+            </h3>
+            <ul class="flex flex-col gap-space-sm font-body-sm text-body-sm">
+              <li class="flex items-center gap-space-xs">
+                <span
+                  class="material-symbols-outlined text-[16px] text-secondary"
+                  >shield</span
+                ><span>Línea Base DAGMA (Santiago de Cali)</span>
+              </li>
+              <li class="flex items-center gap-space-xs">
+                <span
+                  class="material-symbols-outlined text-[16px] text-secondary"
+                  >shield</span
+                ><span>Certificación CVC Valle Circular</span>
+              </li>
+              <li class="flex items-center gap-space-xs">
+                <span
+                  class="material-symbols-outlined text-[16px] text-secondary"
+                  >shield</span
+                ><span>Factores de Emisión UPME / MinAmbiente</span>
+              </li>
+              <li class="flex items-center gap-space-xs">
+                <span
+                  class="material-symbols-outlined text-[16px] text-secondary"
+                  >shield</span
+                ><span>Validación de Trazabilidad Logística</span>
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-space-md">
+            <h3 class="font-title-sm text-title-sm text-on-surface">
+              Enlaces de Navegación
+            </h3>
+            <ul class="flex flex-col gap-space-sm font-body-sm text-body-sm">
+              <li>
+                <a
+                  class="hover:text-on-surface transition-colors"
+                  data-path="directorio-verde"
+                  href="#"
+                  >Directorio de PyMEs Verdes</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-on-surface transition-colors"
+                  data-path="metodologia-co2e"
+                  href="#"
+                  >Fórmulas y Factores CO2e</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-on-surface transition-colors"
+                  data-path="portal-pymes"
+                  href="#"
+                  >Registro de Emisiones PyME</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-on-surface transition-colors"
+                  data-path="centro-de-impacto"
+                  href="#"
+                  >Tablero de Mitigación Departamental</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-on-surface transition-colors"
+                  data-path="extension-web"
+                  href="#"
+                  >Extensión de Navegador VOLIUZ</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"
+        >
+          <p
+            class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-left"
+          >
+            © 2024 VOLIUZ. Plataforma de Transparencia Ambiental desarrollada
+            con Unicatólica. Cali, Valle del Cauca, Colombia.
+          </p>
+          <div
+            class="flex items-center gap-space-md font-label-sm text-label-sm"
+          >
+            <span class="flex items-center gap-space-xs"
+              ><span class="w-2 h-2 rounded-full bg-primary"></span
+              ><span>Nodo Activo Cali</span></span
+            ><span>Versión Producción 1.2</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

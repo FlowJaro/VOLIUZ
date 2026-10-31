@@ -1,0 +1,1870 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <title>VOLIUZ — Transparencia Ambiental y Comercio Sostenible</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @layer base {
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        body {
+          overscroll-behavior: none;
+        }
+        main > :first-child {
+          margin-top: 0 !important;
+        }
+        main > :last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-container": "#64a1ff",
+              "on-error-container": "#93000a",
+              "secondary-fixed": "#d6e3ff",
+              secondary: "#005db7",
+              "on-surface": "#1b1c1c",
+              "surface-container-low": "#f6f3f2",
+              "on-primary-container": "#cbffc2",
+              outline: "#707a6c",
+              "on-primary-fixed": "#002204",
+              surface: "#fbf9f8",
+              primary: "#0d631b",
+              "tertiary-container": "#127f26",
+              "primary-fixed": "#a3f69c",
+              "on-secondary-fixed-variant": "#00468c",
+              error: "#ba1a1a",
+              "primary-container": "#2e7d32",
+              "surface-container-high": "#eae8e7",
+              "surface-container-lowest": "#ffffff",
+              "surface-variant": "#e4e2e1",
+              "on-surface-variant": "#40493d",
+              "surface-container": "#f0eded",
+              "surface-container-highest": "#e4e2e1",
+              "on-primary": "#ffffff",
+              "on-tertiary-container": "#caffc2",
+              "primary-fixed-dim": "#88d982",
+              "inverse-on-surface": "#f3f0f0",
+              background: "#fbf9f8",
+              "on-error": "#ffffff",
+              "error-container": "#ffdad6",
+              "on-primary-fixed-variant": "#005312",
+              "outline-variant": "#bfcaba",
+              "on-tertiary-fixed-variant": "#005313",
+              "inverse-surface": "#303030",
+              "on-secondary-fixed": "#001b3d",
+              "tertiary-fixed": "#94f990",
+              "on-secondary-container": "#003670",
+              "surface-tint": "#1b6d24",
+              "inverse-primary": "#88d982",
+              "surface-dim": "#dcd9d9",
+              "surface-bright": "#fbf9f8",
+              "on-tertiary": "#ffffff",
+              "on-background": "#1b1c1c",
+              "on-secondary": "#ffffff",
+              "on-tertiary-fixed": "#002204",
+              "secondary-fixed-dim": "#a9c7ff",
+              tertiary: "#006419",
+              "tertiary-fixed-dim": "#78dc77",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              "space-xs": "0.25rem",
+              gutter: "1rem",
+              "space-md": "1rem",
+              "space-lg": "1.5rem",
+              "margin-md": "2rem",
+              "space-xl": "2.5rem",
+              "margin-lg": "3rem",
+              "gutter-lg": "2rem",
+              margin: "1rem",
+              "gutter-md": "1.5rem",
+              "space-sm": "0.5rem",
+            },
+            fontFamily: {
+              "headline-xl": ["Inter"],
+              "headline-lg": ["Inter"],
+              "body-lg": ["Inter"],
+              "metric-mono": ["Inter"],
+              "title-sm": ["Inter"],
+              "body-md": ["Inter"],
+              "body-sm": ["Inter"],
+              "headline-md": ["Inter"],
+              "label-md": ["Inter"],
+              "headline-xl-mobile": ["Inter"],
+              "label-sm": ["Inter"],
+              "headline-lg-mobile": ["Inter"],
+            },
+            fontSize: {
+              "headline-xl": [
+                "36px",
+                {
+                  lineHeight: "44px",
+                  letterSpacing: "-0.03em",
+                  fontWeight: "700",
+                },
+              ],
+              "headline-lg": [
+                "28px",
+                {
+                  lineHeight: "36px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "600",
+                },
+              ],
+              "body-lg": [
+                "16px",
+                { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" },
+              ],
+              "metric-mono": [
+                "24px",
+                {
+                  lineHeight: "28px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "title-sm": [
+                "16px",
+                {
+                  lineHeight: "22px",
+                  letterSpacing: "-0.005em",
+                  fontWeight: "600",
+                },
+              ],
+              "body-md": [
+                "14px",
+                { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" },
+              ],
+              "body-sm": [
+                "12px",
+                {
+                  lineHeight: "16px",
+                  letterSpacing: "0.01em",
+                  fontWeight: "400",
+                },
+              ],
+              "headline-md": [
+                "20px",
+                {
+                  lineHeight: "26px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "600",
+                },
+              ],
+              "label-md": [
+                "13px",
+                {
+                  lineHeight: "18px",
+                  letterSpacing: "0.01em",
+                  fontWeight: "500",
+                },
+              ],
+              "headline-xl-mobile": [
+                "28px",
+                {
+                  lineHeight: "34px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "label-sm": [
+                "11px",
+                {
+                  lineHeight: "14px",
+                  letterSpacing: "0.04em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-lg-mobile": [
+                "22px",
+                {
+                  lineHeight: "28px",
+                  letterSpacing: "-0.015em",
+                  fontWeight: "600",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-surface font-body-md text-on-surface antialiased">
+    <header
+      class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"
+    >
+      <div
+        class="h-20 max-w-7xl mx-auto px-margin lg:px-margin-lg flex items-center justify-between gap-gutter"
+      >
+        <div class="flex items-center gap-space-md">
+          <a class="flex items-center gap-space-sm" data-path="inicio" href="#"
+            ><div
+              class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center"
+            >
+              <span
+                class="material-symbols-outlined text-on-primary text-[20px]"
+                >eco</span
+              >
+            </div>
+            <div class="flex flex-col">
+              <span
+                class="font-headline-md text-headline-md tracking-tight text-on-surface leading-none"
+                >VOLIUZ</span
+              ><span
+                class="font-label-sm text-label-sm text-on-surface-variant leading-tight"
+                >Valle Circular Tech</span
+              >
+            </div></a
+          >
+          <div
+            class="hidden xl:flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm"
+          >
+            <span class="w-2 h-2 rounded-full bg-primary"></span
+            ><span>Transparencia Ambiental Cali & Valle</span>
+          </div>
+        </div>
+        <nav
+          class="hidden lg:flex items-center gap-space-xs p-space-xs"
+          data-active-classes="bg-primary-container text-on-primary rounded-lg"
+        >
+          <a
+            class="px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"
+            data-path="inicio"
+            href="#"
+            >Inicio</a
+          ><a
+            class="px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"
+            data-path="directorio-verde"
+            href="#"
+            >Directorio Verde</a
+          ><a
+            class="px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"
+            data-path="metodologia-co2e"
+            href="#"
+            >Metodología CO2e</a
+          ><a
+            class="px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"
+            data-path="portal-pymes"
+            href="#"
+            >Portal PyMEs</a
+          ><a
+            class="px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"
+            data-path="centro-de-impacto"
+            href="#"
+            >Centro de Impacto</a
+          >
+        </nav>
+        <div class="flex items-center gap-space-sm">
+          <div
+            class="hidden 2xl:flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm"
+          >
+            <span class="material-symbols-outlined text-[16px] text-primary"
+              >location_on</span
+            ><span>Cali, Valle del Cauca</span>
+          </div>
+          <a
+            class="hidden sm:inline-flex items-center px-space-md py-space-sm rounded-lg font-label-md text-label-md text-secondary hover:bg-secondary-fixed hover:text-on-secondary-fixed-variant transition-colors"
+            data-path="acceso-pyme"
+            href="#"
+            >Acceso PyME</a
+          ><a
+            class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-primary font-label-md text-label-md text-on-primary hover:bg-primary-container transition-colors shadow-sm"
+            data-path="extension-web"
+            href="#"
+            ><span class="material-symbols-outlined text-[16px]">extension</span
+            ><span>Instalar Extensión Web</span
+            ><span
+              class="px-space-xs rounded bg-on-primary/20 text-on-primary font-label-sm text-label-sm"
+              >v1.2</span
+            ></a
+          >
+          <div
+            class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"
+          >
+            <span class="material-symbols-outlined text-on-primary text-[18px]"
+              >person</span
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="w-full pt-20 bg-surface">
+      <div class="flex flex-col w-full">
+        <!-- Top Technical Breadcrumb & Meta Banner -->
+        <section
+          class="w-full bg-surface-container-low py-space-sm px-margin lg:px-margin-lg"
+        >
+          <div
+            class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-space-sm text-on-surface-variant"
+          >
+            <div
+              class="flex items-center gap-space-xs font-label-sm text-label-sm"
+            >
+              <span class="text-primary font-bold">VOLIUZ PROTOCOL</span>
+              <span>/</span>
+              <span>DOCUMENTACIÓN TÉCNICA v3.4</span>
+              <span>/</span>
+              <span class="text-on-surface"
+                >ISO 14067 & GHG PROTOCOL COMPLIANT</span
+              >
+            </div>
+            <div
+              class="flex items-center gap-space-md font-label-sm text-label-sm"
+            >
+              <span class="flex items-center gap-space-xs">
+                <span
+                  class="w-2 h-2 rounded-full bg-primary animate-pulse"
+                ></span>
+                <span
+                  >SIN (Sistema Interconectado Nacional XM): 0.164 kg
+                  CO₂e/kWh</span
+                >
+              </span>
+              <span class="text-outline-variant">|</span>
+              <span class="text-secondary font-bold"
+                >Última Auditoría DQR: Q4-2024</span
+              >
+            </div>
+          </div>
+        </section>
+        <!-- Title & Academic Header Section -->
+        <section
+          class="w-full py-space-xl px-margin lg:px-margin-lg bg-surface relative overflow-hidden"
+        >
+          <div
+            class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-primary-fixed/30 blur-3xl pointer-events-none"
+          ></div>
+          <div
+            class="max-w-7xl mx-auto relative z-10 flex flex-col gap-space-lg"
+          >
+            <div class="flex flex-col gap-space-xs max-w-4xl">
+              <div
+                class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container text-primary font-label-sm text-label-sm self-start"
+              >
+                <span class="material-symbols-outlined text-[14px]"
+                  >science</span
+                >
+                <span>SISTEMA DE AUDITORÍA Y TRAZABILIDAD METODOLÓGICA</span>
+              </div>
+              <h1
+                class="font-headline-xl text-headline-xl text-on-surface tracking-tight"
+              >
+                Detrás de cada dato ambiental existe una metodología
+              </h1>
+              <p
+                class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed"
+              >
+                Nuestra arquitectura de cálculo traduce el Análisis de Ciclo de
+                Vida (LCA) y factores de emisión regionalizados en Colombia
+                (UPME, CVC, DAGMA) a métricas de consumo verificables.
+                Eliminamos el sesgo del greenwashing a través de modelos
+                paramétricos reproducibles y auditoría académica permanente.
+              </p>
+            </div>
+            <!-- Quick Metrics Bar -->
+            <div
+              class="grid grid-cols-2 md:grid-cols-4 gap-gutter bg-surface-container-lowest p-space-md rounded-xl shadow-sm"
+            >
+              <div class="flex flex-col gap-space-xs p-space-sm">
+                <span
+                  class="font-label-sm text-label-sm text-on-surface-variant"
+                  >FACTOR RED CO XM (2024)</span
+                >
+                <span class="font-metric-mono text-metric-mono text-on-surface"
+                  >164.2
+                  <span
+                    class="font-body-sm text-body-sm text-on-surface-variant"
+                    >gCO₂e/kWh</span
+                  ></span
+                >
+                <span
+                  class="font-body-sm text-body-sm text-primary flex items-center gap-space-xs"
+                >
+                  <span class="material-symbols-outlined text-[14px]"
+                    >check_circle</span
+                  >
+                  Matriz Hidroeléctrica Nal.
+                </span>
+              </div>
+              <div class="flex flex-col gap-space-xs p-space-sm">
+                <span
+                  class="font-label-sm text-label-sm text-on-surface-variant"
+                  >MARGEN DE INCERTIDUMBRE</span
+                >
+                <span class="font-metric-mono text-metric-mono text-secondary"
+                  >±7.8%
+                  <span
+                    class="font-body-sm text-body-sm text-on-surface-variant"
+                    >IC 95%</span
+                  ></span
+                >
+                <span class="font-body-sm text-body-sm text-on-surface-variant"
+                  >Monte Carlo 10,000 iteraciones</span
+                >
+              </div>
+              <div class="flex flex-col gap-space-xs p-space-sm">
+                <span
+                  class="font-label-sm text-label-sm text-on-surface-variant"
+                  >BASES HOMOLOGADAS</span
+                >
+                <span
+                  class="font-metric-mono text-metric-mono text-primary-container"
+                  >4
+                  <span
+                    class="font-body-sm text-body-sm text-on-surface-variant"
+                    >Global/Local</span
+                  ></span
+                >
+                <span class="font-body-sm text-body-sm text-on-surface-variant"
+                  >Ecoinvent 3.9, EPEAT, UPME, CVC</span
+                >
+              </div>
+              <div class="flex flex-col gap-space-xs p-space-sm">
+                <span
+                  class="font-label-sm text-label-sm text-on-surface-variant"
+                  >SUPERVISIÓN INSTITUCIONAL</span
+                >
+                <span class="font-metric-mono text-metric-mono text-on-surface"
+                  >Unicatólica</span
+                >
+                <span class="font-body-sm text-body-sm text-on-surface-variant"
+                  >Facultad de Ingeniería Cali</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Módulo 4 Etapas del Proceso de Estimación -->
+        <section
+          class="w-full py-space-xl px-margin lg:px-margin-lg bg-surface-container-low"
+        >
+          <div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+            <div
+              class="flex flex-col md:flex-row md:items-end justify-between gap-space-md"
+            >
+              <div class="flex flex-col gap-space-xs max-w-2xl">
+                <span
+                  class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider"
+                  >Flujo de Computación Científica</span
+                >
+                <h2 class="font-headline-lg text-headline-lg text-on-surface">
+                  Las 4 Etapas del Proceso de Estimación
+                </h2>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                  Un pipeline de datos de cuatro fases continuas que transforma
+                  los insumos de proveedores locales y registros industriales en
+                  métricas directas para consumidores y reguladores.
+                </p>
+              </div>
+              <div
+                class="flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container rounded-lg text-on-surface-variant font-label-sm text-label-sm"
+              >
+                <span class="material-symbols-outlined text-[16px] text-primary"
+                  >verified</span
+                >
+                <span>ISO 14044 (LCA) Framework</span>
+              </div>
+            </div>
+            <!-- 4 Connected Process Columns -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-gutter relative"
+            >
+              <!-- Step 1 -->
+              <div
+                class="flex flex-col bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow relative"
+              >
+                <div class="flex items-center justify-between pb-space-sm">
+                  <span
+                    class="font-label-sm text-label-sm text-primary font-bold"
+                    >FASE 01</span
+                  >
+                  <span
+                    class="w-7 h-7 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-metric-mono text-label-md"
+                    >1</span
+                  >
+                </div>
+                <div
+                  class="flex items-center gap-space-xs text-on-surface pb-space-xs"
+                >
+                  <span
+                    class="material-symbols-outlined text-primary text-[20px]"
+                    >straighten</span
+                  >
+                  <h3 class="font-title-sm text-title-sm">
+                    Unidad Funcional Estandarizada
+                  </h3>
+                </div>
+                <p
+                  class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed pb-space-md"
+                >
+                  Definición matemática de la unidad de referencia cuantificable
+                  por categoría de producto comercializable en el Valle del
+                  Cauca (ej. 1 kg de café pergamino seco listo para exportar o 1
+                  prenda textil de 200g).
+                </p>
+                <div
+                  class="mt-auto pt-space-sm bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-space-xs"
+                >
+                  <span
+                    class="font-label-sm text-label-sm text-on-surface font-semibold"
+                    >Parámetros Críticos:</span
+                  >
+                  <span
+                    class="font-body-sm text-body-sm text-on-surface-variant"
+                    >• Vida útil proyectada (ciclos)</span
+                  >
+                  <span
+                    class="font-body-sm text-body-sm text-on-surface-variant"
+                    >• Rendimiento de masa funcional</span
+                  >
+                </div>
+              </div>
+              <!-- Step 2 -->
+              <div
+                class="flex flex-col bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow relative"
+              >
+                <div class="flex items-center justify-between pb-space-sm">
+                  <span
+                    class="font-label-sm text-label-sm text-primary font-bold"
+                    >FASE 02</span
+                  >
+                  <span
+                    class="w-7 h-7 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-metric-mono text-label-md"
+                    >2</span
+                  >
+                </div>
+                <div
+                  class="flex items-center gap-space-xs text-on-surface pb-space-xs"
+                >
+                  <span
+                    class="material-symbols-outlined text-primary text-[20px]"
+                    >account_tree</span
+                  >
+                  <h3 class="font-title-sm text-title-sm">
+                    Mapeo de Ciclo de Vida (Cradle-to-Gate)
+                  </h3>
+                </div>
+                <p
+                  class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed pb-space-md"
+                >
+                  Límites del sistema estrictos desde la extracción de materia
+                  prima agrícola/mineral, refinamiento y manufactura hasta la
+                  puerta de salida logística en centros de distribución regional
+                  (Yumbo, Cali, Buenaventura).
+                </p>
+                <div
+                  class="mt-auto pt-space-sm bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-space-xs"
+                >
+                  <span
+                    class="font-label-sm text-label-sm text-on-surface font-semibold"
+                    >Alcance Metodológico:</span
+                  >
+                  <span
+                    class="font-body-sm text-body-sm text-on-surface-variant"
+                    >• Exclusión de fase uso no atribuible</span
+                  >
+                  <span
+                    class="font-body-sm text-body-sm text-on-surface-variant"
+                    >• Balance hídrico de proceso directo</span
+                  >
+                </div>
+              </div>
+              <!-- Step 3 -->
+              <div
+                class="flex flex-col bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow relative"
+              >
+                <div class="flex items-center justify-between pb-space-sm">
+                  <span
+                    class="font-label-sm text-label-sm text-primary font-bold"
+                    >FASE 03</span
+                  >
+                  <span
+                    class="w-7 h-7 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-metric-mono text-label-md"
+                    >3</span
+                  >
+                </div>
+                <div
+                  class="flex items-center gap-space-xs text-on-surface pb-space-xs"
+                >
+                  <span
+                    class="material-symbols-outlined text-primary text-[20px]"
+                    >database</span
+                  >
+                  <h3 class="font-title-sm text-title-sm">
+                    Bases de Factores de Emisión
+                  </h3>
+                </div>
+                <p
+                  class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed pb-space-md"
+                >
+                  Cruce computacional de inventarios con Ecoinvent LCA v3.9,
+                  estándares EPEAT, ENERGY STAR para componentes electrónicos y
+                  factores locales del SIN (XM Colombia) corregidos por pérdidas
+                  de transmisión técnica regional.
+                </p>
+                <div
+                  class="mt-auto pt-space-sm bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-space-xs"
+                >
+                  <span
+                    class="font-label-sm text-label-sm text-on-surface font-semibold"
+                    >Fuentes de Calibración:</span
+                  >
+                  <span
+                    class="font-body-sm text-body-sm text-on-surface-variant"
+                    >• Factor UPME Febrero 2024</span
+                  >
+                  <span
+                    class="font-body-sm text-body-sm text-on-surface-variant"
+                    >• CVC Matriz Orgánica Valle</span
+                  >
+                </div>
+              </div>
+              <!-- Step 4 -->
+              <div
+                class="flex flex-col bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow relative"
+              >
+                <div class="flex items-center justify-between pb-space-sm">
+                  <span
+                    class="font-label-sm text-label-sm text-primary font-bold"
+                    >FASE 04</span
+                  >
+                  <span
+                    class="w-7 h-7 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-metric-mono text-label-md"
+                    >4</span
+                  >
+                </div>
+                <div
+                  class="flex items-center gap-space-xs text-on-surface pb-space-xs"
+                >
+                  <span
+                    class="material-symbols-outlined text-primary text-[20px]"
+                    >analytics</span
+                  >
+                  <h3 class="font-title-sm text-title-sm">
+                    Estimación Paramétrica & Incertidumbre
+                  </h3>
+                </div>
+                <p
+                  class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed pb-space-md"
+                >
+                  Cálculo algorítmico con rangos explícitos de incertidumbre
+                  estocástica (±8% promedio). Ningún producto recibe un número
+                  estático arbitrario sin su intervalo de confianza asociado en
+                  el sello digital.
+                </p>
+                <div
+                  class="mt-auto pt-space-sm bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-space-xs"
+                >
+                  <span
+                    class="font-label-sm text-label-sm text-on-surface font-semibold"
+                    >Salida Transparente:</span
+                  >
+                  <span
+                    class="font-body-sm text-body-sm text-on-surface-variant"
+                    >• Calificación Semáforo CO₂e</span
+                  >
+                  <span
+                    class="font-body-sm text-body-sm text-on-surface-variant"
+                    >• Hash criptográfico de auditoría</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Módulo Central Interactivo: Calculadora Comparativa de Huella de Carbono (Nudging Ambiental) -->
+        <section
+          class="w-full py-space-xl px-margin lg:px-margin-lg bg-surface"
+        >
+          <div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+            <div class="flex flex-col gap-space-xs max-w-3xl">
+              <div
+                class="inline-flex items-center gap-space-xs text-secondary font-label-sm text-label-sm"
+              >
+                <span class="material-symbols-outlined text-[16px]"
+                  >compare_arrows</span
+                >
+                <span class="font-bold uppercase tracking-wider"
+                  >Simulador de Decisión Consciente (Nudging Verde)</span
+                >
+              </div>
+              <h2 class="font-headline-lg text-headline-lg text-on-surface">
+                Calculadora Comparativa de Huella de Carbono
+              </h2>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+              >
+                Compara el impacto ambiental real entre bienes de producción
+                lineal tradicional y alternativas regionales circulares
+                registradas en el Valle del Cauca. Observa el ahorro
+                cuantificado en CO₂e, distancias vehiculares y agua dulce.
+              </p>
+            </div>
+            <!-- Main Interactive 2-Column Split Pane -->
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg bg-surface-container-lowest p-space-lg rounded-xl shadow-md"
+            >
+              <!-- Left Column: Controls & Product Profiles (5 Cols) -->
+              <div class="lg:col-span-5 flex flex-col gap-space-md">
+                <div class="flex flex-col gap-space-xs">
+                  <span
+                    class="font-label-sm text-label-sm text-on-surface-variant font-semibold"
+                    >SELECCIONA LA CATEGORÍA DE ANÁLISIS:</span
+                  >
+                  <div
+                    class="grid grid-cols-3 gap-space-xs bg-surface-container p-space-xs rounded-lg text-center"
+                    id="categoryButtons"
+                  >
+                    <button
+                      class="py-space-xs px-space-sm rounded font-label-md text-label-md bg-primary text-on-primary font-bold shadow-sm transition-all"
+                      id="btn-textil"
+                      onclick="setCategory('textil')"
+                    >
+                      Textil / Ropa
+                    </button>
+                    <button
+                      class="py-space-xs px-space-sm rounded font-label-md text-label-md text-on-surface hover:bg-surface-container-highest transition-all"
+                      id="btn-cafe"
+                      onclick="setCategory('cafe')"
+                    >
+                      Café de Origen
+                    </button>
+                    <button
+                      class="py-space-xs px-space-sm rounded font-label-md text-label-md text-on-surface hover:bg-surface-container-highest transition-all"
+                      id="btn-empaque"
+                      onclick="setCategory('empaque')"
+                    >
+                      Empaques / Bio
+                    </button>
+                  </div>
+                </div>
+                <!-- Product Card A (Conventional) -->
+                <div
+                  class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-sm"
+                >
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-space-xs"
+                    >
+                      <span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+                      PRODUCTO CONVENCIONAL (LÍNEA BASE)
+                    </span>
+                    <span
+                      class="px-space-xs py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-bold"
+                      >Importado / Lineal</span
+                    >
+                  </div>
+                  <div class="flex items-center gap-space-md">
+                    <div
+                      class="w-16 h-16 rounded-lg bg-surface-variant shrink-0 flex items-center justify-center text-on-surface-variant"
+                    >
+                      <span
+                        class="material-symbols-outlined text-[32px]"
+                        id="convIcon"
+                        >checkroom</span
+                      >
+                    </div>
+                    <div class="flex flex-col">
+                      <h4
+                        class="font-title-sm text-title-sm text-on-surface"
+                        id="convTitle"
+                      >
+                        Camiseta Algodón Virgen Convencional
+                      </h4>
+                      <p
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                        id="convOrigin"
+                      >
+                        Origen: Cadena global asiática (Importado a
+                        Buenaventura)
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-between pt-space-xs">
+                    <span
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                      >Huella Cradle-to-Gate estimada:</span
+                    >
+                    <span
+                      class="font-metric-mono text-metric-mono text-error font-bold"
+                      id="convFootprint"
+                      >4.60 kg CO₂e</span
+                    >
+                  </div>
+                </div>
+                <!-- Product Card B (Sustainable Valle) -->
+                <div
+                  class="p-space-md rounded-lg bg-primary-fixed/20 flex flex-col gap-space-sm"
+                >
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="font-label-sm text-label-sm text-primary font-bold flex items-center gap-space-xs"
+                    >
+                      <span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+                      ALTERNATIVA CIRCULAR DEL VALLE
+                    </span>
+                    <span
+                      class="px-space-xs py-0.5 rounded bg-primary text-on-primary font-label-sm text-label-sm font-bold"
+                      >Sello Valle Circular CVC</span
+                    >
+                  </div>
+                  <div class="flex items-center gap-space-md">
+                    <div
+                      class="w-16 h-16 rounded-lg bg-primary-fixed shrink-0 flex items-center justify-center text-on-primary-fixed"
+                    >
+                      <span
+                        class="material-symbols-outlined text-[32px]"
+                        id="circIcon"
+                        >recycling</span
+                      >
+                    </div>
+                    <div class="flex flex-col">
+                      <h4
+                        class="font-title-sm text-title-sm text-on-surface"
+                        id="circTitle"
+                      >
+                        Camiseta Algodón Reciclado Valle
+                      </h4>
+                      <p
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                        id="circOrigin"
+                      >
+                        Manufactura local: Cali & Yumbo (Fibras recuperadas 70%)
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-between pt-space-xs">
+                    <span
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                      >Huella Cradle-to-Gate verificada:</span
+                    >
+                    <span
+                      class="font-metric-mono text-metric-mono text-primary font-bold"
+                      id="circFootprint"
+                      >2.10 kg CO₂e</span
+                    >
+                  </div>
+                </div>
+                <!-- Quantity Slider -->
+                <div
+                  class="flex flex-col gap-space-xs p-space-sm bg-surface-container rounded-lg"
+                >
+                  <div class="flex items-center justify-between">
+                    <label
+                      class="font-label-md text-label-md text-on-surface font-semibold"
+                      for="quantityRange"
+                      >Volumen de Consumo Anual:</label
+                    >
+                    <span
+                      class="font-metric-mono text-body-lg text-primary font-bold"
+                      id="quantityLabel"
+                      >1 unidad</span
+                    >
+                  </div>
+                  <input
+                    class="w-full accent-primary h-2 bg-surface-variant rounded-lg cursor-pointer"
+                    id="quantityRange"
+                    max="50"
+                    min="1"
+                    oninput="updateCalculation()"
+                    step="1"
+                    type="range"
+                    value="1"
+                  />
+                  <div
+                    class="flex justify-between font-label-sm text-label-sm text-on-surface-variant"
+                  >
+                    <span>1 unidad</span>
+                    <span>25 unidades</span>
+                    <span>50 unidades</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Right Column: Live Data Visualization & Equivalencies (7 Cols) -->
+              <div
+                class="lg:col-span-7 flex flex-col justify-between gap-space-md bg-surface-container-low p-space-lg rounded-xl"
+              >
+                <div class="flex items-center justify-between pb-space-xs">
+                  <div class="flex items-center gap-space-xs">
+                    <span
+                      class="material-symbols-outlined text-primary text-[22px]"
+                      >bar_chart</span
+                    >
+                    <h3
+                      class="font-headline-md text-headline-md text-on-surface"
+                    >
+                      Intensidad de Carbono Comparada
+                    </h3>
+                  </div>
+                  <span
+                    class="font-label-sm text-label-sm px-space-sm py-space-xs rounded bg-surface-container-highest text-on-surface-variant"
+                  >
+                    Normalizado por Unidad Funcional
+                  </span>
+                </div>
+                <!-- Carbon Bar 1: Conventional -->
+                <div class="flex flex-col gap-space-xs">
+                  <div
+                    class="flex justify-between text-on-surface font-label-md text-label-md"
+                  >
+                    <span class="flex items-center gap-space-xs font-semibold">
+                      <span
+                        class="w-3 h-3 rounded-full bg-error inline-block"
+                      ></span>
+                      <span id="barTitleConv"
+                        >Camiseta Convencional (Línea Base)</span
+                      >
+                    </span>
+                    <span
+                      class="font-metric-mono text-body-md text-error font-bold"
+                      id="barValueConv"
+                      >4.60 kg CO₂e</span
+                    >
+                  </div>
+                  <div
+                    class="w-full bg-surface-variant h-5 rounded-full overflow-hidden p-0.5 flex"
+                  >
+                    <div
+                      class="bg-error h-full rounded-full transition-all duration-500 ease-out"
+                      id="barWidthConv"
+                      style="width: 100%"
+                    ></div>
+                  </div>
+                </div>
+                <!-- Carbon Bar 2: Circular -->
+                <div class="flex flex-col gap-space-xs">
+                  <div
+                    class="flex justify-between text-on-surface font-label-md text-label-md"
+                  >
+                    <span class="flex items-center gap-space-xs font-semibold">
+                      <span
+                        class="w-3 h-3 rounded-full bg-primary inline-block"
+                      ></span>
+                      <span id="barTitleCirc"
+                        >Camiseta Valle Circular (Acreditada)</span
+                      >
+                    </span>
+                    <span
+                      class="font-metric-mono text-body-md text-primary font-bold"
+                      id="barValueCirc"
+                      >2.10 kg CO₂e</span
+                    >
+                  </div>
+                  <div
+                    class="w-full bg-surface-variant h-5 rounded-full overflow-hidden p-0.5 flex"
+                  >
+                    <div
+                      class="bg-primary h-full rounded-full transition-all duration-500 ease-out"
+                      id="barWidthCirc"
+                      style="width: 45.6%"
+                    ></div>
+                  </div>
+                </div>
+                <!-- Key Nudging Metric Banner -->
+                <div
+                  class="p-space-md rounded-xl bg-primary text-on-primary flex flex-col sm:flex-row items-center justify-between gap-space-md shadow-sm"
+                >
+                  <div class="flex items-center gap-space-md">
+                    <div
+                      class="w-12 h-12 rounded-full bg-on-primary/20 flex items-center justify-center shrink-0"
+                    >
+                      <span
+                        class="material-symbols-outlined text-[28px] text-on-primary"
+                        >savings</span
+                      >
+                    </div>
+                    <div class="flex flex-col">
+                      <span
+                        class="font-label-sm text-label-sm uppercase tracking-wider text-on-primary/80"
+                        >Mitigación Neta Directa</span
+                      >
+                      <span
+                        class="font-headline-lg text-headline-lg font-bold leading-tight"
+                        id="savingCO2"
+                        >-2.50 kg CO₂e</span
+                      >
+                      <span class="font-body-sm text-body-sm text-on-primary/90"
+                        >de reducción de gases efecto invernadero</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="px-space-md py-space-sm bg-on-primary/10 rounded-lg text-center shrink-0"
+                  >
+                    <span
+                      class="font-metric-mono text-headline-md font-bold block"
+                      id="percentSaving"
+                      >-54.3%</span
+                    >
+                    <span class="font-label-sm text-label-sm text-on-primary/80"
+                      >Reducción Relativa</span
+                    >
+                  </div>
+                </div>
+                <!-- Tangible Environmental Equivalencies (Visual Richness) -->
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-xs"
+                >
+                  <!-- Km evitados -->
+                  <div
+                    class="flex items-center gap-space-md bg-surface-container-lowest p-space-md rounded-lg"
+                  >
+                    <div
+                      class="w-12 h-12 rounded-lg bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0"
+                    >
+                      <span class="material-symbols-outlined text-[24px]"
+                        >directions_car</span
+                      >
+                    </div>
+                    <div class="flex flex-col">
+                      <span
+                        class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold"
+                        >Equivalente en Tránsito</span
+                      >
+                      <span
+                        class="font-metric-mono text-title-sm text-on-surface font-bold"
+                        id="equivKm"
+                        >14.7 km evitados</span
+                      >
+                      <span
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                        >En vehículo urbano a gasolina (promedio Cali)</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Litros de agua -->
+                  <div
+                    class="flex items-center gap-space-md bg-surface-container-lowest p-space-md rounded-lg"
+                  >
+                    <div
+                      class="w-12 h-12 rounded-lg bg-primary-fixed text-on-primary-fixed flex items-center justify-center shrink-0"
+                    >
+                      <span class="material-symbols-outlined text-[24px]"
+                        >water_drop</span
+                      >
+                    </div>
+                    <div class="flex flex-col">
+                      <span
+                        class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold"
+                        >Agua Dulce Preservada</span
+                      >
+                      <span
+                        class="font-metric-mono text-title-sm text-primary font-bold"
+                        id="equivWater"
+                        >1,850 Litros</span
+                      >
+                      <span
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                        >Preservados en cuencas de los ríos del Valle</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- Micro note -->
+                <div
+                  class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm pt-space-xs"
+                >
+                  <span
+                    class="material-symbols-outlined text-[14px] text-secondary"
+                    >info</span
+                  >
+                  <span
+                    >Factores calculados con el factor automotor UPME: 0.170 kg
+                    CO₂/km y huella hídrica Water Footprint Network.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Sección de 5 Criterios de Rigor Científico -->
+        <section
+          class="w-full py-space-xl px-margin lg:px-margin-lg bg-surface-container-low"
+        >
+          <div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+            <div class="flex flex-col gap-space-xs max-w-3xl">
+              <span
+                class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider"
+                >Protocolo de Acreditación</span
+              >
+              <h2 class="font-headline-lg text-headline-lg text-on-surface">
+                5 Criterios Innegociables de Rigor Científico
+              </h2>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Para que una empresa o producto reciba la certificación digital
+                en el Directorio Verde de VOLIUZ, su cálculo debe satisfacer los
+                5 pilares validados por el equipo investigador de Unicatólica.
+              </p>
+            </div>
+            <!-- 5-Card Bento-Style Grid -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter"
+            >
+              <!-- Criterio 1 -->
+              <div
+                class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-shadow"
+              >
+                <div
+                  class="w-10 h-10 rounded-lg bg-primary-fixed text-on-primary-fixed flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined text-[22px]"
+                    >share</span
+                  >
+                </div>
+                <div class="flex flex-col gap-space-xs">
+                  <span
+                    class="font-label-sm text-label-sm text-primary font-bold"
+                    >PILAR 01</span
+                  >
+                  <h3 class="font-title-sm text-title-sm text-on-surface">
+                    Trazabilidad de Cadena de Suministro
+                  </h3>
+                </div>
+                <p
+                  class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+                >
+                  Cada eslabón (origen de insumos, procesamiento agropecuario o
+                  textil, empaque secundario y distribución) debe poseer
+                  manifiestos de transporte terrestre y facturación electrónica
+                  que comprueben la procedencia en el territorio del Valle del
+                  Cauca o departamentos limítrofes.
+                </p>
+                <div
+                  class="mt-auto pt-space-sm flex items-center gap-space-xs font-label-sm text-label-sm text-primary"
+                >
+                  <span class="material-symbols-outlined text-[14px]"
+                    >task_alt</span
+                  >
+                  <span>Auditoría de manifiestos DIAN / CVC</span>
+                </div>
+              </div>
+              <!-- Criterio 2 -->
+              <div
+                class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-shadow"
+              >
+                <div
+                  class="w-10 h-10 rounded-lg bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined text-[22px]"
+                    >balance</span
+                  >
+                </div>
+                <div class="flex flex-col gap-space-xs">
+                  <span
+                    class="font-label-sm text-label-sm text-secondary font-bold"
+                    >PILAR 02</span
+                  >
+                  <h3 class="font-title-sm text-title-sm text-on-surface">
+                    Comparabilidad Objetiva
+                  </h3>
+                </div>
+                <p
+                  class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+                >
+                  Ninguna afirmación de "eco-amigable" es aceptada sin un
+                  producto de referencia de mercado idéntico en funcionalidad.
+                  Los diferenciales deben basarse en pruebas cuantitativas sobre
+                  la misma unidad funcional bajo la norma ISO 14021 tipo II.
+                </p>
+                <div
+                  class="mt-auto pt-space-sm flex items-center gap-space-xs font-label-sm text-label-sm text-secondary"
+                >
+                  <span class="material-symbols-outlined text-[14px]"
+                    >task_alt</span
+                  >
+                  <span>Benchmark homologado por categoría</span>
+                </div>
+              </div>
+              <!-- Criterio 3 -->
+              <div
+                class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-shadow"
+              >
+                <div
+                  class="w-10 h-10 rounded-lg bg-primary-fixed text-on-primary-fixed flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined text-[22px]"
+                    >fact_check</span
+                  >
+                </div>
+                <div class="flex flex-col gap-space-xs">
+                  <span
+                    class="font-label-sm text-label-sm text-primary font-bold"
+                    >PILAR 03</span
+                  >
+                  <h3 class="font-title-sm text-title-sm text-on-surface">
+                    Calidad de Datos (DQR System)
+                  </h3>
+                </div>
+                <p
+                  class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+                >
+                  Evaluación multidimensional de Data Quality Rating:
+                  representatividad tecnológica, geográfica (Cali, Palmira,
+                  Yumbo, Buga), temporal (no mayor a 3 años de antigüedad) y
+                  precisión volumétrica en medidores calibrados de energía y
+                  agua.
+                </p>
+                <div
+                  class="mt-auto pt-space-sm flex items-center gap-space-xs font-label-sm text-label-sm text-primary"
+                >
+                  <span class="material-symbols-outlined text-[14px]"
+                    >task_alt</span
+                  >
+                  <span>Índice DQR mínimo exigido > 82/100</span>
+                </div>
+              </div>
+              <!-- Criterio 4 -->
+              <div
+                class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-shadow"
+              >
+                <div
+                  class="w-10 h-10 rounded-lg bg-surface-variant text-on-surface-variant flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined text-[22px]"
+                    >grain</span
+                  >
+                </div>
+                <div class="flex flex-col gap-space-xs">
+                  <span
+                    class="font-label-sm text-label-sm text-on-surface-variant font-bold"
+                    >PILAR 04</span
+                  >
+                  <h3 class="font-title-sm text-title-sm text-on-surface">
+                    Manejo de Incertidumbre Estocástica
+                  </h3>
+                </div>
+                <p
+                  class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+                >
+                  Rechazamos valores deterministas simplistas. El motor VOLIUZ
+                  aplica simulación Monte Carlo de 10,000 iteraciones para
+                  modelar la dispersión en el rendimiento de calderas, variación
+                  en mezclas de combustible diésel y fluctuaciones estacionales
+                  de la red hídrica.
+                </p>
+                <div
+                  class="mt-auto pt-space-sm flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface"
+                >
+                  <span class="material-symbols-outlined text-[14px]"
+                    >task_alt</span
+                  >
+                  <span>Distribución Gaussiana explícita ±8%</span>
+                </div>
+              </div>
+              <!-- Criterio 5 (Span across or flex card) -->
+              <div
+                class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-shadow md:col-span-2 lg:col-span-2"
+              >
+                <div
+                  class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined text-[22px]"
+                    >door_sliding</span
+                  >
+                </div>
+                <div class="flex flex-col gap-space-xs">
+                  <span
+                    class="font-label-sm text-label-sm text-primary-container font-bold"
+                    >PILAR 05</span
+                  >
+                  <h3 class="font-title-sm text-title-sm text-on-surface">
+                    Límites Rigurosos Cradle-to-Gate
+                  </h3>
+                </div>
+                <p
+                  class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+                >
+                  Para garantizar honestidad comercial, no se asumen
+                  comportamientos hipotéticos del consumidor final (ej. cómo
+                  lava la ropa o si separa en la fuente). La frontera se cierra
+                  estrictamente cuando el bien queda empacado y transferido al
+                  canal mayorista o minorista, evitando la dispersión no
+                  controlable de la fase de uso.
+                </p>
+                <div
+                  class="mt-auto pt-space-sm flex flex-wrap items-center gap-space-md"
+                >
+                  <span
+                    class="font-body-sm text-body-sm text-primary flex items-center gap-space-xs"
+                  >
+                    <span class="material-symbols-outlined text-[14px]"
+                      >check_circle</span
+                    >
+                    Delimitación Estricta Gate
+                  </span>
+                  <span
+                    class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-space-xs"
+                  >
+                    <span class="material-symbols-outlined text-[14px]"
+                      >block</span
+                    >
+                    Cero compensaciones ficticias
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Bloque Institucional de Respaldo Académico Unicatólica & Marco Legal -->
+        <section
+          class="w-full py-space-xl px-margin lg:px-margin-lg bg-surface"
+        >
+          <div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+            <!-- Academic & Legal Split Container -->
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg bg-surface-container-lowest p-space-xl rounded-2xl shadow-md relative overflow-hidden"
+            >
+              <div class="absolute right-0 top-0 bottom-0 w-2 bg-primary"></div>
+              <!-- Left Column: Academic Endorsement Unicatólica (7 cols) -->
+              <div class="lg:col-span-7 flex flex-col gap-space-md">
+                <div class="flex items-center gap-space-sm">
+                  <div
+                    class="w-12 h-12 rounded-xl bg-primary flex items-center justify-center text-on-primary"
+                  >
+                    <span class="material-symbols-outlined text-[26px]"
+                      >school</span
+                    >
+                  </div>
+                  <div class="flex flex-col">
+                    <span
+                      class="font-label-sm text-label-sm text-primary font-bold uppercase"
+                      >Validación Técnico-Científica</span
+                    >
+                    <h3
+                      class="font-headline-md text-headline-md text-on-surface"
+                    >
+                      Institución Universitaria Colegios de Colombia
+                      (Unicatólica)
+                    </h3>
+                  </div>
+                </div>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                >
+                  El modelo algorítmico y los factores de emisión aplicados en
+                  el ecosistema VOLIUZ han sido estructurados en conjunto con el
+                  <strong
+                    >Grupo de Investigación en Ingeniería Sostenible de
+                    Unicatólica (Lumen Gentium)</strong
+                  >, sede Cali. Este respaldo asegura independencia frente a
+                  intereses comerciales y un proceso de revisión continua por
+                  pares académicos.
+                </p>
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-xs"
+                >
+                  <div
+                    class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-xs"
+                  >
+                    <span
+                      class="font-label-sm text-label-sm text-on-surface font-semibold"
+                      >Comité Técnico Asesor</span
+                    >
+                    <span
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                      >Docentes investigadores de Ingeniería Industrial y
+                      Ambiental, especializados en Ecología Industrial del
+                      Valle.</span
+                    >
+                  </div>
+                  <div
+                    class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-xs"
+                  >
+                    <span
+                      class="font-label-sm text-label-sm text-on-surface font-semibold"
+                      >Semillero Valle Circular</span
+                    >
+                    <span
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                      >Muestreo en campo y validación de inventarios directos en
+                      PyMEs manufactureras de Cali y Yumbo.</span
+                    >
+                  </div>
+                </div>
+                <div class="flex items-center gap-space-md pt-space-sm">
+                  <a
+                    class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm"
+                    data-path="metodologia-whitepaper"
+                    href="#"
+                  >
+                    <span class="material-symbols-outlined text-[16px]"
+                      >description</span
+                    >
+                    <span>Descargar Whitepaper Metodológico (PDF 3.8 MB)</span>
+                  </a>
+                  <span
+                    class="font-label-sm text-label-sm text-on-surface-variant"
+                    >Código DOI: 10.24054/voliuz.unicatolica.2024</span
+                  >
+                </div>
+              </div>
+              <!-- Right Column: Legal Framework & Colombian Regulations (5 cols) -->
+              <div
+                class="lg:col-span-5 flex flex-col gap-space-md bg-surface-container-low p-space-lg rounded-xl"
+              >
+                <div class="flex items-center gap-space-xs text-on-surface">
+                  <span
+                    class="material-symbols-outlined text-secondary text-[22px]"
+                    >gavel</span
+                  >
+                  <h4 class="font-title-sm text-title-sm">
+                    Marco Normativo Colombiano Aplicable
+                  </h4>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Nuestros cálculos y sellos se fundamentan estrictamente en la
+                  jurisprudencia y directrices técnicas nacionales vigentes:
+                </p>
+                <div class="flex flex-col gap-space-sm">
+                  <!-- Norm 1 -->
+                  <div
+                    class="p-space-sm rounded bg-surface-container-lowest flex items-start gap-space-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary text-[18px] mt-0.5"
+                      >verified_user</span
+                    >
+                    <div class="flex flex-col">
+                      <span
+                        class="font-label-md text-label-md text-on-surface font-bold"
+                        >Ley 1480 de 2011 (Estatuto del Consumidor)</span
+                      >
+                      <span
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                        >Artículo 23: Obligación de proveer información veraz,
+                        suficiente y comprobable, prohibiendo explícitamente
+                        publicidad verde engañosa.</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Norm 2 -->
+                  <div
+                    class="p-space-sm rounded bg-surface-container-lowest flex items-start gap-space-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary text-[18px] mt-0.5"
+                      >verified_user</span
+                    >
+                    <div class="flex flex-col">
+                      <span
+                        class="font-label-md text-label-md text-on-surface font-bold"
+                        >Guía Técnica Colombiana GTC 104</span
+                      >
+                      <span
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                        >Directrices ICONTEC para la gestión del riesgo
+                        ambiental y evaluación de ciclo de vida en
+                        organizaciones productivas.</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Norm 3 -->
+                  <div
+                    class="p-space-sm rounded bg-surface-container-lowest flex items-start gap-space-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary text-[18px] mt-0.5"
+                      >verified_user</span
+                    >
+                    <div class="flex flex-col">
+                      <span
+                        class="font-label-md text-label-md text-on-surface font-bold"
+                        >Resolución 1407 de 2018 (MinAmbiente)</span
+                      >
+                      <span
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                        >Reglamentación para la gestión ambiental de envases y
+                        empaques en esquemas de economía circular.</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="pt-space-xs text-on-surface-variant font-label-sm text-label-sm flex items-center gap-space-xs"
+                >
+                  <span
+                    class="material-symbols-outlined text-[16px] text-secondary"
+                    >security</span
+                  >
+                  <span
+                    >Superintendencia de Industria y Comercio (SIC)
+                    Compliant</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Live Audit Hash Drawer Callout -->
+            <div
+              class="p-space-lg rounded-xl bg-surface-container flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface"
+            >
+              <div class="flex items-center gap-space-md">
+                <div
+                  class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-on-surface"
+                >
+                  <span class="material-symbols-outlined text-[22px]"
+                    >code</span
+                  >
+                </div>
+                <div class="flex flex-col">
+                  <span
+                    class="font-label-sm text-label-sm text-on-surface-variant"
+                    >API PÚBLICA DE FACTORES Y REPOSITORIO DE MODELOS</span
+                  >
+                  <span class="font-title-sm text-title-sm text-on-surface"
+                    >Inspecciona los scripts de cálculo en tiempo real en
+                    GitHub</span
+                  >
+                </div>
+              </div>
+              <div class="flex items-center gap-space-sm">
+                <a
+                  class="px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors shadow-sm flex items-center gap-space-xs"
+                  href="#"
+                >
+                  <span class="material-symbols-outlined text-[16px]"
+                    >terminal</span
+                  >
+                  <span>Documentación API v1</span>
+                </a>
+                <a
+                  class="px-space-md py-space-sm rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:opacity-90 transition-opacity shadow-sm flex items-center gap-space-xs"
+                  data-path="portal-pymes"
+                  href="/pymes"
+                >
+                  <span>Certificar Mi PyME</span>
+                  <span class="material-symbols-outlined text-[16px]"
+                    >arrow_forward</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Interactive Simulator Client Script -->
+        <script>
+          const datasets = {
+            textil: {
+              convTitle: "Camiseta Algodón Virgen Convencional",
+              convOrigin:
+                "Origen: Cadena global asiática (Importado a Buenaventura)",
+              convFootprint: 4.6,
+              convIcon: "checkroom",
+              circTitle: "Camiseta Algodón Reciclado Valle",
+              circOrigin:
+                "Manufactura local: Cali & Yumbo (Fibras recuperadas 70%)",
+              circFootprint: 2.1,
+              circIcon: "recycling",
+              waterFactor: 1850, // litros preservados por unidad
+            },
+            cafe: {
+              convTitle: "Café Estándar Tostado (Empaque Laminado)",
+              convOrigin:
+                "Origen: Distribución masiva sin certificación de origen",
+              convFootprint: 3.8,
+              convIcon: "coffee",
+              circTitle: "Café Agroecológico Sevilla / Dagua",
+              circOrigin: "Cultivo bajo sombra con abono orgánico del Valle",
+              circFootprint: 1.25,
+              circIcon: "nature",
+              waterFactor: 640,
+            },
+            empaque: {
+              convTitle: "Caja Cartón Virgen con Plástico de Burbujas",
+              convOrigin: "Polímeros derivados de petróleo no biodegradables",
+              convFootprint: 2.9,
+              convIcon: "inventory_2",
+              circTitle: "Empaque Fibra de Caña de Azúcar (Valle)",
+              circOrigin: "Bagazo residual de ingenios azucareros del Valle",
+              circFootprint: 0.75,
+              circIcon: "eco",
+              waterFactor: 420,
+            },
+          };
+
+          let currentCategory = "textil";
+
+          function setCategory(catKey) {
+            currentCategory = catKey;
+
+            // Update Tab Styles
+            ["textil", "cafe", "empaque"].forEach((k) => {
+              const btn = document.getElementById("btn-" + k);
+              if (k === catKey) {
+                btn.className =
+                  "py-space-xs px-space-sm rounded font-label-md text-label-md bg-primary text-on-primary font-bold shadow-sm transition-all";
+              } else {
+                btn.className =
+                  "py-space-xs px-space-sm rounded font-label-md text-label-md text-on-surface hover:bg-surface-container-highest transition-all";
+              }
+            });
+
+            const d = datasets[catKey];
+            document.getElementById("convTitle").textContent = d.convTitle;
+            document.getElementById("convOrigin").textContent = d.convOrigin;
+            document.getElementById("convIcon").textContent = d.convIcon;
+            document.getElementById("circTitle").textContent = d.circTitle;
+            document.getElementById("circOrigin").textContent = d.circOrigin;
+            document.getElementById("circIcon").textContent = d.circIcon;
+
+            document.getElementById("barTitleConv").textContent = d.convTitle;
+            document.getElementById("barTitleCirc").textContent = d.circTitle;
+
+            updateCalculation();
+          }
+
+          function updateCalculation() {
+            const qty = parseInt(
+              document.getElementById("quantityRange").value,
+            );
+            document.getElementById("quantityLabel").textContent =
+              qty === 1 ? "1 unidad" : qty + " unidades";
+
+            const d = datasets[currentCategory];
+            const totalConv = d.convFootprint * qty;
+            const totalCirc = d.circFootprint * qty;
+            const netSavings = totalConv - totalCirc;
+            const percentReduc = (netSavings / totalConv) * 100;
+
+            // Car equivalence: 0.170 kg CO2 / km (promedio coche gasolina)
+            const equivKmVal = netSavings / 0.17;
+            const waterPreserved = d.waterFactor * qty;
+
+            // Update Texts
+            document.getElementById("convFootprint").textContent =
+              totalConv.toFixed(2) + " kg CO₂e";
+            document.getElementById("circFootprint").textContent =
+              totalCirc.toFixed(2) + " kg CO₂e";
+
+            document.getElementById("barValueConv").textContent =
+              totalConv.toFixed(2) + " kg CO₂e";
+            document.getElementById("barValueCirc").textContent =
+              totalCirc.toFixed(2) + " kg CO₂e";
+
+            document.getElementById("savingCO2").textContent =
+              "-" + netSavings.toFixed(2) + " kg CO₂e";
+            document.getElementById("percentSaving").textContent =
+              "-" + percentReduc.toFixed(1) + "%";
+
+            document.getElementById("equivKm").textContent =
+              equivKmVal.toFixed(1) + " km evitados";
+            document.getElementById("equivWater").textContent =
+              waterPreserved.toLocaleString() + " Litros";
+
+            // Bars Visual Scale: max bar is always conventional (100%), circular is fraction
+            const circPercent = ((totalCirc / totalConv) * 100).toFixed(1);
+            document.getElementById("barWidthConv").style.width = "100%";
+            document.getElementById("barWidthCirc").style.width =
+              circPercent + "%";
+          }
+
+          // Initialize on page load
+          window.addEventListener("DOMContentLoaded", () => {
+            updateCalculation();
+          });
+        </script>
+      </div>
+    </main>
+    <footer class="w-full bg-surface-container-low text-on-surface-variant">
+      <div class="max-w-7xl mx-auto px-margin lg:px-margin-lg py-space-xl">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-lg pb-space-xl"
+        >
+          <div class="flex flex-col gap-space-md">
+            <div class="flex items-center gap-space-sm">
+              <div
+                class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center"
+              >
+                <span
+                  class="material-symbols-outlined text-on-primary text-[18px]"
+                  >eco</span
+                >
+              </div>
+              <span
+                class="font-headline-md text-headline-md tracking-tight text-on-surface"
+                >VOLIUZ</span
+              >
+            </div>
+            <p
+              class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+            >
+              Ecosistema de datos abiertos y validación técnica para la
+              transparencia en huella de carbono y reciclabilidad regional en el
+              Valle del Cauca.
+            </p>
+            <div
+              class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-lowest"
+            >
+              <span class="material-symbols-outlined text-secondary text-[20px]"
+                >school</span
+              >
+              <div class="flex flex-col">
+                <span
+                  class="font-label-sm text-label-sm text-on-surface font-bold"
+                  >Alianza Académica</span
+                ><span class="font-body-sm text-body-sm text-on-surface-variant"
+                  >Unicatólica — Lumen Gentium</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-space-md">
+            <h3 class="font-title-sm text-title-sm text-on-surface">
+              Marco Normativo Colombia
+            </h3>
+            <ul class="flex flex-col gap-space-sm font-body-sm text-body-sm">
+              <li class="flex items-center gap-space-xs">
+                <span class="material-symbols-outlined text-[16px] text-primary"
+                  >verified</span
+                ><span>Ley 1480 de 2011 (Estatuto del Consumidor)</span>
+              </li>
+              <li class="flex items-center gap-space-xs">
+                <span class="material-symbols-outlined text-[16px] text-primary"
+                  >verified</span
+                ><span>Ley 1672 de 2013 (Gestión RAEE)</span>
+              </li>
+              <li class="flex items-center gap-space-xs">
+                <span class="material-symbols-outlined text-[16px] text-primary"
+                  >verified</span
+                ><span>Ley 1581 de 2012 (Protección Habeas Data)</span>
+              </li>
+              <li class="flex items-center gap-space-xs">
+                <span class="material-symbols-outlined text-[16px] text-primary"
+                  >verified</span
+                ><span>ODS 12: Producción y Consumo Responsable</span>
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-space-md">
+            <h3 class="font-title-sm text-title-sm text-on-surface">
+              Ecosistema Regional
+            </h3>
+            <ul class="flex flex-col gap-space-sm font-body-sm text-body-sm">
+              <li class="flex items-center gap-space-xs">
+                <span
+                  class="material-symbols-outlined text-[16px] text-secondary"
+                  >shield</span
+                ><span>Línea Base DAGMA (Santiago de Cali)</span>
+              </li>
+              <li class="flex items-center gap-space-xs">
+                <span
+                  class="material-symbols-outlined text-[16px] text-secondary"
+                  >shield</span
+                ><span>Certificación CVC Valle Circular</span>
+              </li>
+              <li class="flex items-center gap-space-xs">
+                <span
+                  class="material-symbols-outlined text-[16px] text-secondary"
+                  >shield</span
+                ><span>Factores de Emisión UPME / MinAmbiente</span>
+              </li>
+              <li class="flex items-center gap-space-xs">
+                <span
+                  class="material-symbols-outlined text-[16px] text-secondary"
+                  >shield</span
+                ><span>Validación de Trazabilidad Logística</span>
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-space-md">
+            <h3 class="font-title-sm text-title-sm text-on-surface">
+              Enlaces de Navegación
+            </h3>
+            <ul class="flex flex-col gap-space-sm font-body-sm text-body-sm">
+              <li>
+                <a
+                  class="hover:text-on-surface transition-colors"
+                  data-path="directorio-verde"
+                  href="#"
+                  >Directorio de PyMEs Verdes</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-on-surface transition-colors"
+                  data-path="metodologia-co2e"
+                  href="#"
+                  >Fórmulas y Factores CO2e</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-on-surface transition-colors"
+                  data-path="portal-pymes"
+                  href="#"
+                  >Registro de Emisiones PyME</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-on-surface transition-colors"
+                  data-path="centro-de-impacto"
+                  href="#"
+                  >Tablero de Mitigación Departamental</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-on-surface transition-colors"
+                  data-path="extension-web"
+                  href="#"
+                  >Extensión de Navegador VOLIUZ</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"
+        >
+          <p
+            class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-left"
+          >
+            © 2024 VOLIUZ. Plataforma de Transparencia Ambiental desarrollada
+            con Unicatólica. Cali, Valle del Cauca, Colombia.
+          </p>
+          <div
+            class="flex items-center gap-space-md font-label-sm text-label-sm"
+          >
+            <span class="flex items-center gap-space-xs"
+              ><span class="w-2 h-2 rounded-full bg-primary"></span
+              ><span>Nodo Activo Cali</span></span
+            ><span>Versión Producción 1.2</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

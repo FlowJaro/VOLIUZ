@@ -1,0 +1,1959 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <title>VOLIUZ — Transparencia Ambiental y Comercio Sostenible</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @layer base {
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+        }
+
+        body {
+          overscroll-behavior: none;
+        }
+
+        main > :first-child {
+          margin-top: 0 !important;
+        }
+
+        main > :last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+
+      ::-webkit-scrollbar {
+        display: none;
+      }
+
+      .font-mono-code {
+        font-family: "JetBrains Mono", monospace;
+      }
+
+      .font-display {
+        font-family: "Space Grotesk", sans-serif;
+      }
+
+      .subtle-grid {
+        background-size: 32px 32px;
+        background-image:
+          linear-gradient(
+            to right,
+            rgba(15, 56, 34, 0.04) 1px,
+            transparent 1px
+          ),
+          linear-gradient(
+            to bottom,
+            rgba(15, 56, 34, 0.04) 1px,
+            transparent 1px
+          );
+      }
+
+      @keyframes pulse-subtle {
+        0%,
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+
+        50% {
+          opacity: 0.4;
+          transform: scale(1.15);
+        }
+      }
+
+      .pulse-mint {
+        animation: pulse-subtle 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "bioluminescent-mint": "#10b981",
+              primary: "#002210",
+              "on-primary": "#ffffff",
+              surface: "#f6faf7",
+              "surface-container-low": "#f1f5f2",
+              "slate-tech-blue": "#0284c7",
+              "on-tertiary-container": "#6ba900",
+              "error-container": "#ffdad6",
+              "tertiary-container": "#203700",
+              "tertiary-fixed-dim": "#91db2a",
+              "surface-tint": "#3f674d",
+              "surface-container-highest": "#dfe3e1",
+              "surface-container": "#ebefec",
+              "on-secondary-container": "#00714d",
+              "on-secondary": "#ffffff",
+              "on-primary-container": "#78a285",
+              "on-error-container": "#93000a",
+              "forest-deep": "#0f3822",
+              "mineral-chalk": "#f8faf8",
+              "outline-variant": "#c1c8c0",
+              "on-error": "#ffffff",
+              outline: "#727972",
+              "on-tertiary-fixed-variant": "#304f00",
+              "primary-fixed": "#c0edcd",
+              error: "#ba1a1a",
+              "surface-variant": "#dfe3e1",
+              "on-tertiary-fixed": "#102000",
+              "paper-shadow": "#e8eee9",
+              "primary-container": "#0f3822",
+              "primary-fixed-dim": "#a5d1b1",
+              "bioluminescent-emerald": "#34d399",
+              "tertiary-fixed": "#acf847",
+              secondary: "#006c49",
+              "inverse-surface": "#2d3130",
+              "secondary-container": "#6cf8bb",
+              "on-secondary-fixed-variant": "#005236",
+              "on-tertiary": "#ffffff",
+              "inverse-on-surface": "#eef2ef",
+              "secondary-fixed-dim": "#4edea3",
+              "surface-container-high": "#e5e9e6",
+              "on-surface-variant": "#414942",
+              "on-primary-fixed": "#002110",
+              "surface-bright": "#f6faf7",
+              "on-background": "#181d1b",
+              "on-surface": "#181d1b",
+              "secondary-fixed": "#6ffbbe",
+              "on-secondary-fixed": "#002113",
+              "paper-canvas": "#f1f5f2",
+              "cyber-lime": "#84cc16",
+              "surface-container-lowest": "#ffffff",
+              "forest-canopy": "#1b4d3e",
+              "inverse-primary": "#a5d1b1",
+              "surface-dim": "#d7dbd8",
+              "scientific-navy": "#0f172a",
+              "on-primary-fixed-variant": "#274f37",
+              background: "#f6faf7",
+              "cyber-chartreuse": "#a3e635",
+              tertiary: "#102000",
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+            spacing: {
+              "space-lg": "1.5rem",
+              "gutter-md": "1.5rem",
+              "margin-lg": "3rem",
+              "space-xl": "2.5rem",
+              margin: "1rem",
+              "space-md": "1rem",
+              "margin-md": "2rem",
+              "space-xs": "0.25rem",
+              "gutter-lg": "2rem",
+              gutter: "1rem",
+              "space-sm": "0.5rem",
+            },
+            fontFamily: {
+              "body-lg": ["Geist", "sans-serif"],
+              "passport-spec": ["JetBrains Mono", "monospace"],
+              "headline-lg": ["Space Grotesk", "sans-serif"],
+              "headline-md": ["Space Grotesk", "sans-serif"],
+              "body-sm": ["Geist", "sans-serif"],
+              "passport-stamp": ["JetBrains Mono", "monospace"],
+              "title-sm": ["Geist", "sans-serif"],
+              "headline-xl-mobile": ["Space Grotesk", "sans-serif"],
+              "headline-xl": ["Space Grotesk", "sans-serif"],
+              "body-md": ["Geist", "sans-serif"],
+              "headline-lg-mobile": ["Space Grotesk", "sans-serif"],
+              "metric-display": ["JetBrains Mono", "monospace"],
+            },
+            fontSize: {
+              "body-lg": [
+                "16px",
+                { lineHeight: "26px", letterSpacing: "0em", fontWeight: "400" },
+              ],
+              "passport-spec": [
+                "12px",
+                {
+                  lineHeight: "16px",
+                  letterSpacing: "0.03em",
+                  fontWeight: "500",
+                },
+              ],
+              "headline-lg": [
+                "30px",
+                {
+                  lineHeight: "38px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-md": [
+                "22px",
+                {
+                  lineHeight: "28px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "600",
+                },
+              ],
+              "body-sm": [
+                "12px",
+                {
+                  lineHeight: "18px",
+                  letterSpacing: "0.01em",
+                  fontWeight: "400",
+                },
+              ],
+              "passport-stamp": [
+                "10px",
+                {
+                  lineHeight: "12px",
+                  letterSpacing: "0.08em",
+                  fontWeight: "700",
+                },
+              ],
+              "title-sm": [
+                "16px",
+                {
+                  lineHeight: "22px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-xl-mobile": [
+                "30px",
+                {
+                  lineHeight: "36px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "headline-xl": [
+                "40px",
+                {
+                  lineHeight: "48px",
+                  letterSpacing: "-0.03em",
+                  fontWeight: "700",
+                },
+              ],
+              "body-md": [
+                "14px",
+                { lineHeight: "22px", letterSpacing: "0em", fontWeight: "400" },
+              ],
+              "headline-lg-mobile": [
+                "24px",
+                {
+                  lineHeight: "32px",
+                  letterSpacing: "-0.015em",
+                  fontWeight: "600",
+                },
+              ],
+              "metric-display": [
+                "28px",
+                {
+                  lineHeight: "32px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body
+    class="bg-surface font-body-md text-on-surface antialiased selection:bg-bioluminescent-mint selection:text-forest-deep"
+  >
+    <header
+      class="fixed top-0 left-0 w-full z-50 bg-mineral-chalk/90 backdrop-blur-xl border-b border-forest-deep/10 shadow-[0_2px_12px_rgba(15,56,34,0.03)]"
+    >
+      <div
+        class="h-20 max-w-7xl mx-auto px-margin lg:px-margin-lg flex items-center justify-between gap-gutter"
+      >
+        <div class="flex items-center gap-space-md">
+          <a class="flex items-center gap-3 group" data-path="inicio" href="#">
+            <div
+              class="w-10 h-10 rounded-xl bg-forest-deep text-mineral-chalk flex items-center justify-center border border-forest-canopy/40 shadow-sm transition-transform group-hover:scale-105"
+            >
+              <span
+                class="material-symbols-outlined text-bioluminescent-mint text-[22px]"
+                >eco</span
+              >
+            </div>
+            <div class="flex flex-col">
+              <div class="flex items-center gap-2">
+                <span
+                  class="font-display text-xl font-bold tracking-tight text-forest-deep leading-none"
+                  >VOLIUZ</span
+                ><span
+                  class="px-1.5 py-0.5 rounded bg-forest-deep/5 border border-forest-deep/15 text-forest-deep font-mono-code text-[10px] font-bold tracking-wider"
+                  >LAB·02</span
+                >
+              </div>
+              <span
+                class="font-mono-code text-[11px] text-on-surface-variant tracking-wider uppercase font-medium"
+                >Valle Circular Tech</span
+              >
+            </div>
+          </a>
+          <div
+            class="hidden xl:flex items-center gap-2 px-3 py-1.5 rounded-full bg-forest-deep/5 border border-forest-deep/10 text-forest-deep font-mono-code text-xs"
+          >
+            <div class="relative flex items-center justify-center w-2 h-2">
+              <span
+                class="absolute w-2 h-2 rounded-full bg-bioluminescent-mint pulse-mint"
+              ></span
+              ><span
+                class="relative w-1.5 h-1.5 rounded-full bg-forest-deep"
+              ></span>
+            </div>
+            <span class="font-semibold">NODO ACTIVO:</span
+            ><span class="text-on-surface-variant">Cali · Yumbo · Jamundí</span
+            ><span class="text-outline-variant">|</span
+            ><span class="text-emerald-700 font-bold">DQR: 94.2%</span>
+          </div>
+        </div>
+        <nav
+          class="hidden lg:flex items-center gap-1 p-1 bg-surface-container-high/60 rounded-xl border border-forest-deep/5"
+          data-active-classes="bg-forest-deep text-mineral-chalk font-semibold rounded-lg shadow-sm"
+        >
+          <a
+            aria-current="page"
+            class="px-3.5 py-1.5 font-body-md text-xs font-semibold tracking-wide transition-all bg-forest-deep text-mineral-chalk rounded-lg shadow-sm flex items-center gap-1.5"
+            data-path="inicio"
+            href="#"
+            ><span
+              class="w-1.5 h-1.5 rounded-full bg-bioluminescent-mint"
+            ></span
+            ><span>Inicio</span></a
+          ><a
+            class="px-3.5 py-1.5 rounded-lg font-body-md text-xs font-medium text-on-surface-variant hover:text-forest-deep hover:bg-surface-container transition-colors"
+            data-path="directorio-verde"
+            href="#"
+            >Directorio Verde</a
+          ><a
+            class="px-3.5 py-1.5 rounded-lg font-body-md text-xs font-medium text-on-surface-variant hover:text-forest-deep hover:bg-surface-container transition-colors"
+            data-path="metodologia-co2e"
+            href="#"
+            >Metodología CO2e</a
+          ><a
+            class="px-3.5 py-1.5 rounded-lg font-body-md text-xs font-medium text-on-surface-variant hover:text-forest-deep hover:bg-surface-container transition-colors"
+            data-path="portal-pymes"
+            href="#"
+            >Portal PyMEs</a
+          ><a
+            class="px-3.5 py-1.5 rounded-lg font-body-md text-xs font-medium text-on-surface-variant hover:text-forest-deep hover:bg-surface-container transition-colors"
+            data-path="centro-de-impacto"
+            href="#"
+            >Centro de Impacto</a
+          >
+        </nav>
+        <div class="flex items-center gap-space-sm">
+          <div
+            class="hidden 2xl:flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container text-forest-deep font-mono-code text-xs border border-forest-deep/10"
+          >
+            <span class="material-symbols-outlined text-[15px] text-secondary"
+              >explore</span
+            ><span>Valle del Cauca</span>
+          </div>
+          <a
+            class="hidden sm:inline-flex items-center px-3.5 py-2 rounded-lg font-body-md text-xs font-semibold text-forest-deep hover:bg-forest-deep/5 transition-colors border border-transparent hover:border-forest-deep/10"
+            data-path="acceso-pyme"
+            href="#"
+            >Acceso PyME</a
+          ><a
+            class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-forest-deep font-body-md text-xs font-semibold text-mineral-chalk hover:bg-forest-canopy transition-all shadow-[0_2px_8px_rgba(15,56,34,0.18)] border border-emerald-900/40 group"
+            data-path="extension-web"
+            href="#"
+            ><span
+              class="material-symbols-outlined text-[17px] text-bioluminescent-mint group-hover:rotate-12 transition-transform"
+              >extension</span
+            ><span>Instalar Extensión</span
+            ><span
+              class="px-1.5 py-0.2 rounded bg-bioluminescent-mint/20 text-bioluminescent-mint font-mono-code text-[10px] font-bold"
+              >v1.2</span
+            ></a
+          >
+          <div
+            class="w-8 h-8 rounded-lg bg-forest-deep/10 text-forest-deep border border-forest-deep/15 flex items-center justify-center shrink-0 cursor-pointer hover:bg-forest-deep hover:text-mineral-chalk transition-colors"
+          >
+            <span class="material-symbols-outlined text-[18px]"
+              >account_circle</span
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="w-full pt-20 bg-surface">
+      <div class="flex flex-col w-full">
+        <!-- HERO SECTION: 2 COLUMNS HIGH IMPACT WITH SCIENTIFIC LAB AESTHETIC -->
+        <section
+          class="relative w-full overflow-hidden bg-surface subtle-grid py-space-xl lg:py-margin-lg border-b border-forest-deep/10"
+        >
+          <div
+            class="absolute -top-32 -left-32 w-96 h-96 bg-bioluminescent-mint/10 rounded-full blur-3xl pointer-events-none"
+          ></div>
+          <div
+            class="absolute top-1/2 right-0 w-80 h-80 bg-cyber-lime/10 rounded-full blur-3xl pointer-events-none"
+          ></div>
+          <div
+            class="max-w-7xl mx-auto px-margin lg:px-margin-lg relative z-10"
+          >
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-center"
+            >
+              <!-- Left Column: Copy & Actions -->
+              <div class="lg:col-span-7 flex flex-col gap-space-lg">
+                <!-- Institutional Endorsement Pill / Lab Passport Stamp -->
+                <div
+                  class="inline-flex flex-wrap items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container-lowest border border-forest-deep/15 w-fit shadow-xs"
+                >
+                  <div
+                    class="flex items-center gap-1.5 text-forest-deep font-mono-code text-xs font-bold uppercase tracking-wider"
+                  >
+                    <span
+                      class="material-symbols-outlined text-bioluminescent-mint text-[18px]"
+                      >verified</span
+                    >
+                    <span>Protocolo Abierto Unicatólica</span>
+                  </div>
+                  <span class="text-outline-variant">/</span>
+                  <span
+                    class="font-body-md text-xs text-on-surface-variant font-medium"
+                    >Facultad de Ingeniería</span
+                  >
+                  <span class="text-outline-variant">·</span>
+                  <span
+                    class="font-mono-code text-[11px] px-1.5 py-0.2 rounded bg-emerald-50 text-emerald-800 font-bold border border-emerald-200"
+                    >Algoritmo V-LCA v2.4</span
+                  >
+                </div>
+                <!-- Main Value Prop Heading -->
+                <div class="flex flex-col gap-space-sm">
+                  <h1
+                    class="font-display text-4xl lg:text-5xl font-bold text-forest-deep tracking-tight leading-[1.12]"
+                  >
+                    Transparencia ambiental para un comercio electrónico
+                    <span
+                      class="underline decoration-bioluminescent-mint decoration-4 underline-offset-4"
+                      >consciente</span
+                    >
+                  </h1>
+                  <p
+                    class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed"
+                  >
+                    Desmantelamos la asimetría de información en tus compras
+                    digitales. La extensión
+                    <span
+                      class="font-semibold text-forest-deep bg-surface-container px-1 rounded"
+                      >VOLIUZ</span
+                    >
+                    audita la huella de carbono en tiempo real y te conecta de
+                    inmediato con alternativas sostenibles verificadas en Cali,
+                    Yumbo y el Valle del Cauca.
+                  </p>
+                </div>
+                <!-- Action CTA Group -->
+                <div class="flex flex-wrap items-center gap-3 pt-space-xs">
+                  <a
+                    class="inline-flex items-center justify-center gap-2.5 px-space-lg py-3 rounded-xl bg-forest-deep text-mineral-chalk font-body-md text-sm font-semibold shadow-[0_4px_16px_rgba(15,56,34,0.22)] hover:bg-forest-canopy transition-all border border-emerald-800"
+                    data-path="extension-web"
+                    href="#"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[20px] text-bioluminescent-mint"
+                      >extension</span
+                    >
+                    <span>Instalar Extensión Web</span>
+                    <span
+                      class="text-[11px] px-2 py-0.5 rounded-full bg-mineral-chalk/15 text-mineral-chalk font-mono-code font-bold tracking-tight"
+                      >Gratis Chrome &amp; Firefox</span
+                    >
+                  </a>
+                  <a
+                    class="inline-flex items-center justify-center gap-2 px-space-lg py-3 rounded-xl bg-surface-container-lowest text-forest-deep font-body-md text-sm font-semibold shadow-xs hover:bg-surface-container border border-forest-deep/15 transition-colors"
+                    data-path="directorio-verde"
+                    href="#"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[19px] text-secondary"
+                      >storefront</span
+                    >
+                    <span>Explorar Directorio Verde</span>
+                  </a>
+                </div>
+                <!-- Local Ecosystem Anchor Metrics / Climate Passport Spec -->
+                <div
+                  class="pt-space-md grid grid-cols-3 gap-3 border-t border-forest-deep/10"
+                >
+                  <div
+                    class="p-3.5 rounded-xl bg-surface-container-lowest border border-forest-deep/10 shadow-xs flex flex-col justify-between"
+                  >
+                    <div class="flex items-center justify-between mb-1">
+                      <span
+                        class="font-mono-code text-[11px] font-bold text-on-surface-variant uppercase tracking-wider"
+                        >Censo Valle</span
+                      >
+                      <span
+                        class="w-1.5 h-1.5 rounded-full bg-bioluminescent-mint"
+                      ></span>
+                    </div>
+                    <span
+                      class="font-mono-code text-2xl lg:text-3xl font-bold text-forest-deep tracking-tight"
+                      >120+</span
+                    >
+                    <span
+                      class="font-body-sm text-[12px] text-on-surface-variant leading-tight mt-1"
+                      >PyMEs Verdes Verificadas</span
+                    >
+                  </div>
+                  <div
+                    class="p-3.5 rounded-xl bg-surface-container-lowest border border-forest-deep/10 shadow-xs flex flex-col justify-between"
+                  >
+                    <div class="flex items-center justify-between mb-1">
+                      <span
+                        class="font-mono-code text-[11px] font-bold text-on-surface-variant uppercase tracking-wider"
+                        >Tarifa</span
+                      >
+                      <span
+                        class="w-1.5 h-1.5 rounded-full bg-slate-tech-blue"
+                      ></span>
+                    </div>
+                    <span
+                      class="font-mono-code text-2xl lg:text-3xl font-bold text-secondary tracking-tight"
+                      >0 COP</span
+                    >
+                    <span
+                      class="font-body-sm text-[12px] text-on-surface-variant leading-tight mt-1"
+                      >Acceso Abierto Ciudadano</span
+                    >
+                  </div>
+                  <div
+                    class="p-3.5 rounded-xl bg-surface-container-lowest border border-forest-deep/10 shadow-xs flex flex-col justify-between"
+                  >
+                    <div class="flex items-center justify-between mb-1">
+                      <span
+                        class="font-mono-code text-[11px] font-bold text-on-surface-variant uppercase tracking-wider"
+                        >Protocolo</span
+                      >
+                      <span
+                        class="w-1.5 h-1.5 rounded-full bg-cyber-lime"
+                      ></span>
+                    </div>
+                    <span
+                      class="font-mono-code text-xl lg:text-2xl font-bold text-forest-deep tracking-tight"
+                      >ISO 14067</span
+                    >
+                    <span
+                      class="font-body-sm text-[12px] text-on-surface-variant leading-tight mt-1"
+                      >Metodología CO2e Trazable</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Right Column: Interactive Browser Simulation with VOLIUZ Floating Inspector HUD -->
+              <div class="lg:col-span-5 relative">
+                <!-- Tech Glow Effect Behind Mockup -->
+                <div
+                  class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-bioluminescent-mint/20 via-forest-deep/10 to-cyber-chartreuse/20 blur-xl opacity-75"
+                ></div>
+                <div
+                  class="relative w-full rounded-2xl bg-surface-container-lowest border border-forest-deep/20 shadow-2xl overflow-hidden"
+                >
+                  <!-- Simulated Browser Header Bar -->
+                  <div
+                    class="px-4 py-3 bg-surface-container border-b border-forest-deep/10 flex items-center justify-between"
+                  >
+                    <div class="flex items-center gap-1.5">
+                      <span
+                        class="w-2.5 h-2.5 rounded-full bg-[#ff5f56]"
+                      ></span>
+                      <span
+                        class="w-2.5 h-2.5 rounded-full bg-[#ffbd2e]"
+                      ></span>
+                      <span
+                        class="w-2.5 h-2.5 rounded-full bg-[#27c93f]"
+                      ></span>
+                    </div>
+                    <div
+                      class="flex items-center gap-2 px-3 py-1 rounded-md bg-surface-container-lowest border border-forest-deep/10 text-on-surface-variant text-xs w-3/5 truncate"
+                    >
+                      <span
+                        class="material-symbols-outlined text-[14px] text-emerald-700"
+                        >lock</span
+                      >
+                      <span
+                        class="font-mono-code text-[11px] text-on-surface-variant truncate"
+                        >mercadolibre.com.co/audifonos-bt-eco</span
+                      >
+                    </div>
+                    <div
+                      class="flex items-center gap-2 text-on-surface-variant"
+                    >
+                      <span
+                        class="material-symbols-outlined text-[17px] text-on-surface-variant"
+                        >favorite_border</span
+                      >
+                      <div
+                        class="px-1.5 py-0.5 rounded bg-forest-deep text-bioluminescent-mint font-mono-code font-bold text-[10px] tracking-widest border border-forest-canopy"
+                      >
+                        V·HUD
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Underlying Commercial Product Card Preview -->
+                  <div
+                    class="p-5 bg-surface-container-lowest flex flex-col gap-4"
+                  >
+                    <div class="flex items-start justify-between gap-4">
+                      <div
+                        class="w-24 h-24 rounded-xl bg-surface-container overflow-hidden shrink-0 border border-forest-deep/10 relative"
+                      >
+                        <img
+                          class="w-full h-full object-cover"
+                          data-alt="Modern sustainable wireless bamboo and recycled aluminum headphones resting on a minimalist clean wooden workbench in a sunny Cali workshop, surrounded by circular material swatches and eco certifications, shot in crisp studio lighting."
+                          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzvaeULhFTba3HLU3WkMiB7XPodJFydeOXPTN3k0n4vtumgbZPg_pZncPFh40nlPAxOdKJDvlOnInk94XVZ8bef_wVefbTo_2kw5rULuOySU6gs0Y7aRM7O66XyAPzbiGSq56K6PNV9kPkfvnqq4N_mFgNTwrkIPhQYbrke7Gw9SsQxsrdygIu6_atQYsemWlcS6nhN9S8EwI7bxe_2Hn_J_dOfcs7lni5D9RR71c"
+                        />
+                        <span
+                          class="absolute bottom-1 right-1 font-mono-code text-[9px] px-1 bg-forest-deep/90 text-mineral-chalk rounded font-bold"
+                          >ML·CO</span
+                        >
+                      </div>
+                      <div class="flex flex-col flex-1">
+                        <div class="flex items-center gap-1.5">
+                          <span
+                            class="font-mono-code text-[10px] text-emerald-800 uppercase font-bold tracking-wider px-1.5 py-0.5 rounded bg-emerald-50 border border-emerald-200"
+                            >Electrónica Sostenible</span
+                          >
+                        </div>
+                        <h4
+                          class="font-display text-base font-bold text-forest-deep mt-1 leading-snug"
+                        >
+                          Audífonos Diadema Bambú EcoSound Pro
+                        </h4>
+                        <div class="flex items-center gap-2 mt-1.5">
+                          <span
+                            class="font-mono-code text-lg text-forest-deep font-bold"
+                            >$189.900 COP</span
+                          >
+                          <span
+                            class="text-xs text-on-surface-variant/70 line-through"
+                            >$249.000</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Neutral progress bar of standard e-commerce -->
+                    <div
+                      class="flex items-center gap-2 text-[11px] font-mono-code text-on-surface-variant"
+                    >
+                      <span>Evaluación inicial:</span>
+                      <div
+                        class="h-1.5 flex-1 bg-surface-container rounded-full overflow-hidden"
+                      >
+                        <div class="h-full bg-forest-deep/30 w-3/4"></div>
+                      </div>
+                      <span>75%</span>
+                    </div>
+                  </div>
+                  <!-- FLOATING VOLIUZ EXTENSION INSPECTOR HUD OVERLAY (LAB TECH VIBE) -->
+                  <div
+                    class="m-3 p-4 rounded-xl bg-forest-deep text-mineral-chalk border border-emerald-500/30 shadow-2xl relative"
+                  >
+                    <!-- Ambient Glow Line -->
+                    <div
+                      class="absolute top-0 left-6 right-6 h-[1px] bg-gradient-to-r from-transparent via-bioluminescent-mint to-transparent"
+                    ></div>
+                    <!-- Widget Header -->
+                    <div
+                      class="flex items-center justify-between pb-3 border-b border-forest-canopy"
+                    >
+                      <div class="flex items-center gap-2">
+                        <div
+                          class="w-6 h-6 rounded-md bg-bioluminescent-mint/20 border border-bioluminescent-mint/40 flex items-center justify-center text-bioluminescent-mint"
+                        >
+                          <span class="material-symbols-outlined text-[15px]"
+                            >radar</span
+                          >
+                        </div>
+                        <div>
+                          <span
+                            class="font-display text-sm font-bold tracking-tight text-mineral-chalk"
+                            >VOLIUZ Inspector</span
+                          >
+                          <span
+                            class="font-mono-code text-[10px] text-bioluminescent-mint/80 ml-1"
+                            >· LIVE DOM</span
+                          >
+                        </div>
+                      </div>
+                      <div class="flex items-center gap-1.5">
+                        <span
+                          class="w-1.5 h-1.5 rounded-full bg-bioluminescent-mint pulse-mint"
+                        ></span>
+                        <span
+                          class="font-mono-code text-[10px] text-bioluminescent-mint font-semibold uppercase tracking-wider"
+                          >Nodo Valle Activo</span
+                        >
+                      </div>
+                    </div>
+                    <!-- Main Metric Gauge Box with relative savings bar -->
+                    <div class="grid grid-cols-2 gap-2.5 pt-3">
+                      <div
+                        class="p-2.5 rounded-lg bg-mineral-chalk/5 border border-forest-canopy/60 flex flex-col justify-between"
+                      >
+                        <span
+                          class="font-mono-code text-[10px] text-mineral-chalk/70 uppercase"
+                          >Huella Ciclo de Vida</span
+                        >
+                        <div class="flex items-baseline gap-1 mt-1">
+                          <span
+                            class="font-mono-code text-2xl text-bioluminescent-mint font-bold"
+                            >1.4</span
+                          >
+                          <span
+                            class="font-mono-code text-xs text-mineral-chalk/70"
+                            >kg CO2e</span
+                          >
+                        </div>
+                        <div
+                          class="mt-2 flex items-center gap-1 text-[11px] font-mono-code font-bold text-bioluminescent-mint bg-bioluminescent-mint/10 px-2 py-0.5 rounded border border-bioluminescent-mint/20"
+                        >
+                          <span class="material-symbols-outlined text-[13px]"
+                            >arrow_downward</span
+                          >
+                          -62% vs Mercado
+                        </div>
+                      </div>
+                      <div
+                        class="p-2.5 rounded-lg bg-mineral-chalk/5 border border-forest-canopy/60 flex flex-col justify-between"
+                      >
+                        <span
+                          class="font-mono-code text-[10px] text-mineral-chalk/70 uppercase"
+                          >Índice Circular Valle</span
+                        >
+                        <div class="flex items-baseline gap-1 mt-1">
+                          <span
+                            class="font-mono-code text-2xl text-cyber-chartreuse font-bold"
+                            >88</span
+                          >
+                          <span
+                            class="font-mono-code text-xs text-mineral-chalk/70"
+                            >/ 100</span
+                          >
+                        </div>
+                        <div
+                          class="mt-2 flex items-center gap-1 text-[11px] font-mono-code text-mineral-chalk/90 bg-white/5 px-2 py-0.5 rounded"
+                        >
+                          <span
+                            class="material-symbols-outlined text-[13px] text-cyber-lime"
+                            >check_circle</span
+                          >
+                          Empaque CVC
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Local Alternative Recommendation Box -->
+                    <div
+                      class="mt-2.5 p-2.5 rounded-lg bg-mineral-chalk/10 hover:bg-mineral-chalk/15 transition-colors border border-emerald-400/30 flex items-center justify-between cursor-pointer"
+                    >
+                      <div class="flex items-center gap-2.5">
+                        <div
+                          class="w-8 h-8 rounded-lg bg-bioluminescent-mint/20 border border-bioluminescent-mint/40 flex items-center justify-center shrink-0"
+                        >
+                          <span
+                            class="material-symbols-outlined text-bioluminescent-mint text-[18px]"
+                            >swap_horizontal_circle</span
+                          >
+                        </div>
+                        <div class="flex flex-col">
+                          <div class="flex items-center gap-1.5">
+                            <span
+                              class="font-body-md text-xs font-bold text-mineral-chalk"
+                              >Alternativa Local Certificada CVC</span
+                            >
+                            <span
+                              class="font-mono-code text-[9px] px-1 py-0.2 rounded bg-bioluminescent-mint text-forest-deep font-bold"
+                              >-80% Flete</span
+                            >
+                          </div>
+                          <span
+                            class="font-mono-code text-[11px] text-mineral-chalk/70 truncate"
+                            >Taller San Fernando, Cali · Ficha #882</span
+                          >
+                        </div>
+                      </div>
+                      <span
+                        class="material-symbols-outlined text-bioluminescent-mint text-[18px]"
+                        >chevron_right</span
+                      >
+                    </div>
+                    <!-- Metadata Footer -->
+                    <div
+                      class="pt-2.5 flex items-center justify-between text-[11px] font-mono-code text-mineral-chalk/60"
+                    >
+                      <span class="flex items-center gap-1.5">
+                        <span
+                          class="w-1.5 h-1.5 rounded-full bg-emerald-400"
+                        ></span>
+                        <span>UPME / MinAmbiente Factor 2024</span>
+                      </span>
+                      <a
+                        class="text-bioluminescent-mint hover:underline font-bold flex items-center gap-0.5"
+                        data-path="metodologia-co2e"
+                        href="/transparencia"
+                      >
+                        <span>Ver Auditoría</span>
+                        <span class="material-symbols-outlined text-[12px]"
+                          >open_in_new</span
+                        >
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SECTION: 3 KEY STATISTICAL INDICATORS GRID (SCIENTIFIC METRIC MONITORS) -->
+        <section
+          class="w-full bg-surface-container-low py-space-xl border-b border-forest-deep/10"
+        >
+          <div
+            class="max-w-7xl mx-auto px-margin lg:px-margin-lg flex flex-col gap-space-lg"
+          >
+            <div
+              class="flex flex-col md:flex-row md:items-end justify-between gap-space-md"
+            >
+              <div class="flex flex-col gap-1.5">
+                <div class="flex items-center gap-2">
+                  <span
+                    class="font-mono-code text-xs uppercase tracking-widest text-emerald-800 font-bold px-2 py-0.5 rounded bg-emerald-100/60 border border-emerald-300"
+                    >Monitoreo Científico &amp; Diagnóstico</span
+                  >
+                  <span
+                    class="font-mono-code text-xs text-on-surface-variant font-medium"
+                    >· Base Territorial</span
+                  >
+                </div>
+                <h2
+                  class="font-display text-2xl lg:text-3xl font-bold text-forest-deep"
+                >
+                  La necesidad urgente de transparencia en el e-commerce
+                </h2>
+              </div>
+              <p
+                class="font-body-md text-sm text-on-surface-variant max-w-md leading-relaxed"
+              >
+                El acelerado volumen transaccional en Colombia demanda
+                herramientas técnicas accesibles para cuantificar externalidades
+                ambientales directas.
+              </p>
+            </div>
+            <!-- 3 Metrics Bento Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+              <!-- Card 1: E-commerce Boom Colombia -->
+              <div
+                class="p-6 rounded-2xl bg-surface-container-lowest border border-forest-deep/15 shadow-xs flex flex-col justify-between gap-5 transition-all hover:border-emerald-600 hover:shadow-md relative overflow-hidden group"
+              >
+                <div
+                  class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-500 to-teal-500"
+                ></div>
+                <div class="flex items-center justify-between">
+                  <span
+                    class="px-2.5 py-1 rounded bg-forest-deep/5 border border-forest-deep/10 text-forest-deep font-mono-code text-xs font-bold uppercase tracking-wider"
+                    >Métricas Colombia E-commerce</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-secondary text-[22px]"
+                    >payments</span
+                  >
+                </div>
+                <div class="flex flex-col gap-1">
+                  <div
+                    class="font-mono-code text-3xl lg:text-4xl text-forest-deep tracking-tight font-bold"
+                  >
+                    14,54 B
+                  </div>
+                  <div
+                    class="font-body-md text-xs font-semibold text-secondary uppercase tracking-wider"
+                  >
+                    Pesos Colombianos (COP) / Trimestre
+                  </div>
+                </div>
+                <p
+                  class="font-body-sm text-xs text-on-surface-variant leading-relaxed"
+                >
+                  Volumen de ventas transaccionadas en plataformas digitales
+                  nacionales. El 78% de los despachos utilizan envases plásticos
+                  de un solo uso sin rotulado ambiental transparente.
+                </p>
+                <div
+                  class="pt-3 border-t border-forest-deep/10 flex items-center justify-between text-xs font-mono-code text-on-surface-variant"
+                >
+                  <span class="font-bold text-forest-deep">Fuente Oficial</span>
+                  <span
+                    class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-semibold"
+                    >MinTIC &amp; CCCE (2023)</span
+                  >
+                </div>
+              </div>
+              <!-- Card 2: RAEE Global & Regional -->
+              <div
+                class="p-6 rounded-2xl bg-surface-container-lowest border border-forest-deep/15 shadow-xs flex flex-col justify-between gap-5 transition-all hover:border-red-500 hover:shadow-md relative overflow-hidden group"
+              >
+                <div
+                  class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-red-500 to-amber-500"
+                ></div>
+                <div class="flex items-center justify-between">
+                  <span
+                    class="px-2.5 py-1 rounded bg-error-container/60 border border-error/20 text-on-error-container font-mono-code text-xs font-bold uppercase tracking-wider"
+                    >Crisis de Residuos RAEE</span
+                  >
+                  <span class="material-symbols-outlined text-error text-[22px]"
+                    >delete_sweep</span
+                  >
+                </div>
+                <div class="flex flex-col gap-1">
+                  <div
+                    class="font-mono-code text-3xl lg:text-4xl text-error tracking-tight font-bold"
+                  >
+                    53,6 M ton
+                  </div>
+                  <div
+                    class="font-body-md text-xs font-semibold text-error/90 uppercase tracking-wider"
+                  >
+                    Desechos Electrónicos Anuales
+                  </div>
+                </div>
+                <p
+                  class="font-body-sm text-xs text-on-surface-variant leading-relaxed"
+                >
+                  Menos del 17.4% de los aparatos electrónicos desechados a
+                  nivel global se reciclan documentadamente. En el Valle del
+                  Cauca, la falta de logística inversa perpetúa el desecho en
+                  vertederos comunes.
+                </p>
+                <div
+                  class="pt-3 border-t border-forest-deep/10 flex items-center justify-between text-xs font-mono-code text-on-surface-variant"
+                >
+                  <span class="font-bold text-forest-deep">Fuente Oficial</span>
+                  <span
+                    class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-semibold"
+                    >Global E-waste / UNITAR</span
+                  >
+                </div>
+              </div>
+              <!-- Card 3: Textil Global Carbon Footprint -->
+              <div
+                class="p-6 rounded-2xl bg-surface-container-lowest border border-forest-deep/15 shadow-xs flex flex-col justify-between gap-5 transition-all hover:border-forest-deep hover:shadow-md relative overflow-hidden group"
+              >
+                <div
+                  class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-lime-500 to-emerald-600"
+                ></div>
+                <div class="flex items-center justify-between">
+                  <span
+                    class="px-2.5 py-1 rounded bg-forest-deep/5 border border-forest-deep/10 text-forest-deep font-mono-code text-xs font-bold uppercase tracking-wider"
+                    >Huella de Carbono Textil</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-forest-deep text-[22px]"
+                    >co2</span
+                  >
+                </div>
+                <div class="flex flex-col gap-1">
+                  <div
+                    class="font-mono-code text-3xl lg:text-4xl text-forest-deep tracking-tight font-bold"
+                  >
+                    ~10% GEI
+                  </div>
+                  <div
+                    class="font-body-md text-xs font-semibold text-forest-deep uppercase tracking-wider"
+                  >
+                    Contribución Global de Emisiones
+                  </div>
+                </div>
+                <p
+                  class="font-body-sm text-xs text-on-surface-variant leading-relaxed"
+                >
+                  La industria del fast-fashion genera más emisiones que el
+                  transporte aéreo y marítimo combinados. VOLIUZ promueve
+                  talleres de confección regenerativa y tintes botánicos en el
+                  Valle.
+                </p>
+                <div
+                  class="pt-3 border-t border-forest-deep/10 flex items-center justify-between text-xs font-mono-code text-on-surface-variant"
+                >
+                  <span class="font-bold text-forest-deep">Fuente Oficial</span>
+                  <span
+                    class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-semibold"
+                    >PNUMA / ONU Medio Ambiente</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SECTION: HOW VOLIUZ WORKS (SYSTEM ARCHITECTURE DIAGRAM) -->
+        <section
+          class="w-full bg-surface py-space-xl border-b border-forest-deep/10"
+        >
+          <div
+            class="max-w-7xl mx-auto px-margin lg:px-margin-lg flex flex-col gap-space-xl"
+          >
+            <div
+              class="text-center flex flex-col items-center gap-2 max-w-2xl mx-auto"
+            >
+              <div
+                class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-forest-deep/5 border border-forest-deep/15 text-forest-deep font-mono-code text-xs font-bold uppercase tracking-wider"
+              >
+                <span
+                  class="w-2 h-2 rounded-full bg-bioluminescent-mint pulse-mint"
+                ></span>
+                <span>Arquitectura del Sistema Bidireccional</span>
+              </div>
+              <h2
+                class="font-display text-2xl lg:text-3xl font-bold text-forest-deep"
+              >
+                ¿Cómo funciona VOLIUZ en tu navegación diaria?
+              </h2>
+              <p class="font-body-md text-sm text-on-surface-variant">
+                Un puente tecnológico entre los gigantes globales del comercio y
+                la economía circular de nuestro territorio.
+              </p>
+            </div>
+            <!-- 2-Step Horizontal Diagram With System Connectors -->
+            <div
+              class="relative grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch"
+            >
+              <!-- STEP 1 CARD -->
+              <div
+                class="p-8 rounded-2xl bg-surface-container-lowest border border-forest-deep/15 shadow-sm flex flex-col justify-between gap-6 relative overflow-hidden group hover:border-emerald-600 transition-all"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="w-12 h-12 rounded-xl bg-forest-deep text-mineral-chalk flex items-center justify-center font-mono-code text-xl font-bold border border-forest-canopy"
+                    >
+                      01
+                    </div>
+                    <div class="flex flex-col">
+                      <span
+                        class="font-mono-code text-xs text-on-surface-variant uppercase font-bold tracking-wider"
+                        >Entrada de Señal</span
+                      >
+                      <span
+                        class="font-display text-base font-bold text-forest-deep"
+                        >En tu Navegador</span
+                      >
+                    </div>
+                  </div>
+                  <span
+                    class="font-mono-code text-xs px-2.5 py-1 rounded bg-forest-deep/5 text-forest-deep border border-forest-deep/10 font-bold"
+                    >CLIENT·EXT</span
+                  >
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h3 class="font-display text-xl font-bold text-forest-deep">
+                    Intercepción Pasiva de Catálogo
+                  </h3>
+                  <p
+                    class="font-body-md text-sm text-on-surface-variant leading-relaxed"
+                  >
+                    Mientras navegas en portales de e-commerce convencionales
+                    (Amazon, MercadoLibre, Éxito, Falabella), la extensión
+                    VOLIUZ analiza los metadatos de materiales, peso y embalaje
+                    del producto observado.
+                  </p>
+                </div>
+                <!-- Feature Bullets -->
+                <ul
+                  class="flex flex-col gap-2.5 font-body-sm text-xs text-on-surface border-t border-b border-forest-deep/10 py-4"
+                >
+                  <li class="flex items-center gap-2.5">
+                    <span
+                      class="material-symbols-outlined text-emerald-700 text-[18px]"
+                      >check_circle</span
+                    >
+                    <span
+                      >Cálculo dinámico de factor de emisión UPME /
+                      MinAmbiente</span
+                    >
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <span
+                      class="material-symbols-outlined text-emerald-700 text-[18px]"
+                      >check_circle</span
+                    >
+                    <span
+                      >Detección de reclamos verdes no certificados
+                      (anti-greenwashing)</span
+                    >
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <span
+                      class="material-symbols-outlined text-emerald-700 text-[18px]"
+                      >check_circle</span
+                    >
+                    <span
+                      >Privacidad estricta: cero rastreo de datos personales
+                      (Ley 1581)</span
+                    >
+                  </li>
+                </ul>
+                <div
+                  class="p-3 rounded-xl bg-surface-container flex items-center justify-between border border-forest-deep/10"
+                >
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="material-symbols-outlined text-secondary text-[22px]"
+                      >speed</span
+                    >
+                    <div class="flex flex-col">
+                      <span
+                        class="font-body-md text-xs font-bold text-forest-deep"
+                        >Respuesta Instantánea</span
+                      >
+                      <span
+                        class="font-mono-code text-[11px] text-on-surface-variant"
+                        >&lt;140ms de latencia en auditoría DOM</span
+                      >
+                    </div>
+                  </div>
+                  <span
+                    class="font-mono-code text-xs px-2 py-0.5 rounded bg-emerald-100 text-emerald-900 font-bold"
+                    >PASS</span
+                  >
+                </div>
+              </div>
+              <!-- Connection Arrow for Desktop -->
+              <div
+                class="hidden lg:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-forest-deep text-bioluminescent-mint border-2 border-mineral-chalk shadow-xl items-center justify-center"
+              >
+                <span class="material-symbols-outlined text-[24px]"
+                  >sync_alt</span
+                >
+              </div>
+              <!-- STEP 2 CARD -->
+              <div
+                class="p-8 rounded-2xl bg-surface-container-lowest border border-forest-deep/15 shadow-sm flex flex-col justify-between gap-6 relative overflow-hidden group hover:border-emerald-600 transition-all"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="w-12 h-12 rounded-xl bg-secondary text-mineral-chalk flex items-center justify-center font-mono-code text-xl font-bold border border-secondary-container"
+                    >
+                      02
+                    </div>
+                    <div class="flex flex-col">
+                      <span
+                        class="font-mono-code text-xs text-on-surface-variant uppercase font-bold tracking-wider"
+                        >Enrutamiento Local</span
+                      >
+                      <span
+                        class="font-display text-base font-bold text-forest-deep"
+                        >En el Valle del Cauca</span
+                      >
+                    </div>
+                  </div>
+                  <span
+                    class="font-mono-code text-xs px-2.5 py-1 rounded bg-secondary/10 text-secondary border border-secondary/20 font-bold"
+                    >VALLE·HUB</span
+                  >
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h3 class="font-display text-xl font-bold text-forest-deep">
+                    Enrutamiento a Alternativas Verificadas
+                  </h3>
+                  <p
+                    class="font-body-md text-sm text-on-surface-variant leading-relaxed"
+                  >
+                    La plataforma cruza tus requerimientos con nuestro
+                    Directorio de Productores Verificados en Cali, Palmira y
+                    Yumbo, permitiéndote adquirir el mismo bien o su sustituto
+                    con hasta 80% menor huella logística.
+                  </p>
+                </div>
+                <!-- Feature Bullets -->
+                <ul
+                  class="flex flex-col gap-2.5 font-body-sm text-xs text-on-surface border-t border-b border-forest-deep/10 py-4"
+                >
+                  <li class="flex items-center gap-2.5">
+                    <span
+                      class="material-symbols-outlined text-secondary text-[18px]"
+                      >verified</span
+                    >
+                    <span
+                      >Validación técnica respaldada por Unicatólica y entes
+                      locales</span
+                    >
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <span
+                      class="material-symbols-outlined text-secondary text-[18px]"
+                      >verified</span
+                    >
+                    <span
+                      >Ficha técnica de trazabilidad con índice de
+                      reciclabilidad de empaque</span
+                    >
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <span
+                      class="material-symbols-outlined text-secondary text-[18px]"
+                      >verified</span
+                    >
+                    <span
+                      >Conexión directa vía WhatsApp empresarial sin
+                      intermediación abusiva</span
+                    >
+                  </li>
+                </ul>
+                <div
+                  class="p-3 rounded-xl bg-surface-container flex items-center justify-between border border-forest-deep/10"
+                >
+                  <div class="flex items-center gap-2.5">
+                    <span
+                      class="material-symbols-outlined text-forest-deep text-[22px]"
+                      >local_shipping</span
+                    >
+                    <div class="flex flex-col">
+                      <span
+                        class="font-body-md text-xs font-bold text-forest-deep"
+                        >Logística Regional de Cercanía</span
+                      >
+                      <span
+                        class="font-mono-code text-[11px] text-on-surface-variant"
+                        >Bicicleta de carga y flotas híbridas</span
+                      >
+                    </div>
+                  </div>
+                  <span
+                    class="font-mono-code text-xs px-2 py-0.5 rounded bg-emerald-100 text-emerald-900 font-bold"
+                    >-80% KM</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SECTION: FEATURED SUSTAINABLE PRODUCTS (DIGITAL PRODUCT PASSPORTS) -->
+        <section
+          class="w-full bg-surface-container-low py-space-xl border-b border-forest-deep/10"
+        >
+          <div
+            class="max-w-7xl mx-auto px-margin lg:px-margin-lg flex flex-col gap-space-xl"
+          >
+            <div
+              class="flex flex-col md:flex-row md:items-end justify-between gap-space-md"
+            >
+              <div class="flex flex-col gap-1.5">
+                <div class="flex items-center gap-2">
+                  <span
+                    class="font-mono-code text-xs uppercase tracking-widest text-emerald-800 font-bold px-2 py-0.5 rounded bg-emerald-100/60 border border-emerald-300"
+                    >Pasaporte Digital de Producto (DPP)</span
+                  >
+                  <span class="font-mono-code text-xs text-on-surface-variant"
+                    >· Registro Abierto</span
+                  >
+                </div>
+                <h2
+                  class="font-display text-2xl lg:text-3xl font-bold text-forest-deep"
+                >
+                  Productos y marcas destacadas de la región
+                </h2>
+              </div>
+              <a
+                class="inline-flex items-center gap-1.5 text-forest-deep font-body-md text-xs font-bold hover:text-emerald-700 transition-colors group"
+                data-path="directorio-verde"
+                href="#"
+              >
+                <span>Ver catálogo completo con 120+ marcas</span>
+                <span
+                  class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform"
+                  >arrow_forward</span
+                >
+              </a>
+            </div>
+            <!-- 3-Column Product Cards Grid -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter-lg"
+            >
+              <!-- PRODUCT CARD 1 -->
+              <div
+                class="rounded-2xl bg-surface-container-lowest border border-forest-deep/15 shadow-sm hover:shadow-lg transition-all flex flex-col overflow-hidden group"
+              >
+                <div
+                  class="relative w-full h-56 bg-surface-container overflow-hidden"
+                >
+                  <img
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    data-alt="A reusable thermal flask made from organic Valle bamboo and recycled stainless steel sitting on an artisanal wooden table next to fresh Colombian green coffee beans, soft daylight entering from an open studio window."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4GWRgX9IhkiA2zdb-6_vnrr5wWOE5wVO5kf_XQA13ZdwN0W2tF6IlbFUI-YyGQvUf8SPMifgnFXFyiVE7T_h3nFOhCAYjH2iALuZ_HI5fnPmNBzgdSi8lVojJw6GhkzYgqk9FI6jcbBGAnB4rSXhAUTEH7v2xRsi9niBWsr3XUA8Jg-HOWBFlFrMOWl7XhneC_BITP1RDh3kk5S8fJZhg5w6Ha7hgsjxzOQdh9Wo"
+                  />
+                  <!-- Digital Stamp Overlay -->
+                  <div
+                    class="absolute top-3 left-3 px-2.5 py-1 rounded bg-forest-deep/90 backdrop-blur-md text-bioluminescent-mint font-mono-code text-xs font-bold flex items-center gap-1.5 border border-forest-canopy"
+                  >
+                    <span class="material-symbols-outlined text-[14px]"
+                      >compost</span
+                    >
+                    Valle Circular CVC
+                  </div>
+                  <div
+                    class="absolute top-3 right-3 px-2.5 py-1 rounded bg-surface-container-lowest/90 backdrop-blur-md text-forest-deep font-mono-code text-xs font-bold border border-forest-deep/15"
+                  >
+                    DPP #CAL-048
+                  </div>
+                  <div
+                    class="absolute bottom-2 left-3 font-mono-code text-[11px] px-2 py-0.5 rounded bg-black/60 text-white backdrop-blur-sm"
+                  >
+                    Cali · Cuenca Río Cali
+                  </div>
+                </div>
+                <div class="p-6 flex flex-col flex-1 justify-between gap-5">
+                  <div class="flex flex-col gap-2">
+                    <div class="flex items-center justify-between">
+                      <span
+                        class="font-mono-code text-xs text-on-surface-variant font-bold uppercase"
+                        >Bambú Nativo SAS</span
+                      >
+                      <span
+                        class="font-mono-code text-lg text-forest-deep font-bold"
+                        >$78.000 COP</span
+                      >
+                    </div>
+                    <h3
+                      class="font-display text-base font-bold text-forest-deep leading-snug"
+                    >
+                      Termo Térmico de Guadua y Acero Reciclado 650ml
+                    </h3>
+                    <p
+                      class="font-body-sm text-xs text-on-surface-variant leading-relaxed"
+                    >
+                      Guadua angustifolia cosechada bajo manejo silvicultural
+                      certificado en la cuenca del Río Cali. Cero revestimientos
+                      sintéticos.
+                    </p>
+                  </div>
+                  <!-- Environmental Metrics Section -->
+                  <div
+                    class="flex flex-col gap-2.5 pt-2 border-t border-forest-deep/10"
+                  >
+                    <!-- Traffic Light CO2 Badge -->
+                    <div
+                      class="flex items-center justify-between p-2 rounded-lg bg-surface-container border border-forest-deep/5"
+                    >
+                      <div class="flex items-center gap-2">
+                        <span
+                          class="w-2 h-2 rounded-full bg-bioluminescent-mint pulse-mint"
+                        ></span>
+                        <span
+                          class="font-mono-code text-[11px] text-on-surface-variant uppercase font-medium"
+                          >Huella Declarada:</span
+                        >
+                      </div>
+                      <span
+                        class="font-mono-code text-xs text-forest-deep font-bold"
+                        >0.32 kg CO2e</span
+                      >
+                    </div>
+                    <!-- Recyclability Progress Meter -->
+                    <div class="flex flex-col gap-1">
+                      <div
+                        class="flex items-center justify-between font-mono-code text-xs"
+                      >
+                        <span class="text-on-surface-variant"
+                          >Reciclabilidad &amp; Biodegradabilidad</span
+                        >
+                        <span class="font-bold text-forest-deep">94%</span>
+                      </div>
+                      <div
+                        class="h-2 w-full bg-surface-container rounded-full overflow-hidden flex"
+                      >
+                        <div
+                          class="h-full bg-emerald-600 w-[70%]"
+                          title="Biodegradable"
+                        ></div>
+                        <div
+                          class="h-full bg-teal-500 w-[24%]"
+                          title="Reciclable Seco"
+                        ></div>
+                        <div
+                          class="h-full bg-surface-variant w-[6%]"
+                          title="Residual"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card Action Footer -->
+                  <div class="pt-2 flex items-center gap-2">
+                    <button
+                      class="flex-1 py-2.5 rounded-lg bg-forest-deep text-mineral-chalk font-body-md text-xs font-semibold hover:bg-forest-canopy transition-colors flex items-center justify-center gap-1.5 border border-forest-canopy"
+                    >
+                      <span
+                        class="material-symbols-outlined text-[17px] text-bioluminescent-mint"
+                        >verified</span
+                      >
+                      <span>Inspeccionar Trazabilidad</span>
+                    </button>
+                    <button
+                      class="p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-forest-deep border border-forest-deep/10 transition-colors"
+                      title="Guardar en favoritos"
+                    >
+                      <span class="material-symbols-outlined text-[18px]"
+                        >bookmark_border</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- PRODUCT CARD 2 -->
+              <div
+                class="rounded-2xl bg-surface-container-lowest border border-forest-deep/15 shadow-sm hover:shadow-lg transition-all flex flex-col overflow-hidden group"
+              >
+                <div
+                  class="relative w-full h-56 bg-surface-container overflow-hidden"
+                >
+                  <img
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    data-alt="Eco-friendly minimalist canvas tote bag and botanical printed apparel produced from repurposed organic cotton in a design atelier located in Yumbo Valle del Cauca, high key lighting with neutral soft tones."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7a9rOVfM29Bgmgzs7h-38JX4gUNAw9ulTRfD7HkgnEApzfSpcSQ9iE7wVe9tG8rEZe2Qfzd4wjhndAkEeeNNjo2bNIC40u9KJNM_P8CTr8fHmhgZBwgv89MqVX3QxixvjvEPtxNTKMZ5wCjps7zlFjWN3SXLCZiHVR5J6AdJ8pCN3Rynp-MD_2O0QIeB_7C-FIA8y5qeCcTmrpKWndXbPLznBP_Ap8meEI6r-x4w"
+                  />
+                  <div
+                    class="absolute top-3 left-3 px-2.5 py-1 rounded bg-forest-deep/90 backdrop-blur-md text-bioluminescent-mint font-mono-code text-xs font-bold flex items-center gap-1.5 border border-forest-canopy"
+                  >
+                    <span class="material-symbols-outlined text-[14px]"
+                      >eco</span
+                    >
+                    Hilado Regenerativo
+                  </div>
+                  <div
+                    class="absolute top-3 right-3 px-2.5 py-1 rounded bg-surface-container-lowest/90 backdrop-blur-md text-forest-deep font-mono-code text-xs font-bold border border-forest-deep/15"
+                  >
+                    DPP #YUM-119
+                  </div>
+                  <div
+                    class="absolute bottom-2 left-3 font-mono-code text-[11px] px-2 py-0.5 rounded bg-black/60 text-white backdrop-blur-sm"
+                  >
+                    Yumbo · Taller Circular
+                  </div>
+                </div>
+                <div class="p-6 flex flex-col flex-1 justify-between gap-5">
+                  <div class="flex flex-col gap-2">
+                    <div class="flex items-center justify-between">
+                      <span
+                        class="font-mono-code text-xs text-on-surface-variant font-bold uppercase"
+                        >Textiles Circulares Cali</span
+                      >
+                      <span
+                        class="font-mono-code text-lg text-forest-deep font-bold"
+                        >$55.000 COP</span
+                      >
+                    </div>
+                    <h3
+                      class="font-display text-base font-bold text-forest-deep leading-snug"
+                    >
+                      Mochila Urbana de Algodón Recuperado y Tintes de Café
+                    </h3>
+                    <p
+                      class="font-body-sm text-xs text-on-surface-variant leading-relaxed"
+                    >
+                      Confección libre de plásticos sintéticos. Teñido natural
+                      con posos de café de fincas cordilleranas de Dagua y
+                      Sevilla.
+                    </p>
+                  </div>
+                  <!-- Environmental Metrics Section -->
+                  <div
+                    class="flex flex-col gap-2.5 pt-2 border-t border-forest-deep/10"
+                  >
+                    <div
+                      class="flex items-center justify-between p-2 rounded-lg bg-surface-container border border-forest-deep/5"
+                    >
+                      <div class="flex items-center gap-2">
+                        <span
+                          class="w-2 h-2 rounded-full bg-bioluminescent-mint pulse-mint"
+                        ></span>
+                        <span
+                          class="font-mono-code text-[11px] text-on-surface-variant uppercase font-medium"
+                          >Huella Declarada:</span
+                        >
+                      </div>
+                      <span
+                        class="font-mono-code text-xs text-forest-deep font-bold"
+                        >0.45 kg CO2e</span
+                      >
+                    </div>
+                    <!-- Recyclability Progress Meter -->
+                    <div class="flex flex-col gap-1">
+                      <div
+                        class="flex items-center justify-between font-mono-code text-xs"
+                      >
+                        <span class="text-on-surface-variant"
+                          >Reciclabilidad &amp; Biodegradabilidad</span
+                        >
+                        <span class="font-bold text-forest-deep">100%</span>
+                      </div>
+                      <div
+                        class="h-2 w-full bg-surface-container rounded-full overflow-hidden flex"
+                      >
+                        <div
+                          class="h-full bg-emerald-600 w-[100%]"
+                          title="100% Compostable"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card Action Footer -->
+                  <div class="pt-2 flex items-center gap-2">
+                    <button
+                      class="flex-1 py-2.5 rounded-lg bg-forest-deep text-mineral-chalk font-body-md text-xs font-semibold hover:bg-forest-canopy transition-colors flex items-center justify-center gap-1.5 border border-forest-canopy"
+                    >
+                      <span
+                        class="material-symbols-outlined text-[17px] text-bioluminescent-mint"
+                        >verified</span
+                      >
+                      <span>Inspeccionar Trazabilidad</span>
+                    </button>
+                    <button
+                      class="p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-forest-deep border border-forest-deep/10 transition-colors"
+                      title="Guardar en favoritos"
+                    >
+                      <span class="material-symbols-outlined text-[18px]"
+                        >bookmark_border</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- PRODUCT CARD 3 -->
+              <div
+                class="rounded-2xl bg-surface-container-lowest border border-forest-deep/15 shadow-sm hover:shadow-lg transition-all flex flex-col overflow-hidden group"
+              >
+                <div
+                  class="relative w-full h-56 bg-surface-container overflow-hidden"
+                >
+                  <img
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    data-alt="Refurbished high grade professional noise-cancelling tech devices neatly arranged on an electrostatic repair desk in a Cali university laboratory, precision tools visible, clean clinical tech aesthetic."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6tTeghGzhSYUUk3WRQU38s_ybv8kAu6S7FApTks87k0QBbi7RMyMu6TmmO1i_eWL4HJyd441bRmdWC5ZAYbPlnLi7g6pnnkQ6d1fCUJv54poF4x-zzPoZAiCdWyZ9HXEdcibp4AiLmcCOlJMe10ghoFRN3ri2qWq4K05gXUizb9nZV4MSFgNcRSlmXCt05A1lTMfxF45tBrPu1LdzbWCpWOsip8Uqfx5Y_yxotoc"
+                  />
+                  <div
+                    class="absolute top-3 left-3 px-2.5 py-1 rounded bg-slate-900/90 backdrop-blur-md text-cyan-300 font-mono-code text-xs font-bold flex items-center gap-1.5 border border-slate-700"
+                  >
+                    <span class="material-symbols-outlined text-[14px]"
+                      >build_circle</span
+                    >
+                    RAEE Circular Auditado
+                  </div>
+                  <div
+                    class="absolute top-3 right-3 px-2.5 py-1 rounded bg-surface-container-lowest/90 backdrop-blur-md text-forest-deep font-mono-code text-xs font-bold border border-forest-deep/15"
+                  >
+                    DPP #JAM-304
+                  </div>
+                  <div
+                    class="absolute bottom-2 left-3 font-mono-code text-[11px] px-2 py-0.5 rounded bg-black/60 text-white backdrop-blur-sm"
+                  >
+                    Jamundí · Tech Hub
+                  </div>
+                </div>
+                <div class="p-6 flex flex-col flex-1 justify-between gap-5">
+                  <div class="flex flex-col gap-2">
+                    <div class="flex items-center justify-between">
+                      <span
+                        class="font-mono-code text-xs text-on-surface-variant font-bold uppercase"
+                        >ReTech Valle Hub</span
+                      >
+                      <span
+                        class="font-mono-code text-lg text-forest-deep font-bold"
+                        >$220.000 COP</span
+                      >
+                    </div>
+                    <h3
+                      class="font-display text-base font-bold text-forest-deep leading-snug"
+                    >
+                      Módulo Smart Router Reacondicionado Grado A+
+                    </h3>
+                    <p
+                      class="font-body-sm text-xs text-on-surface-variant leading-relaxed"
+                    >
+                      Dispositivo de telecomunicaciones recuperado y certificado
+                      con garantía técnica de 18 meses. Evita 4.2 kg de residuos
+                      RAEE.
+                    </p>
+                  </div>
+                  <!-- Environmental Metrics Section -->
+                  <div
+                    class="flex flex-col gap-2.5 pt-2 border-t border-forest-deep/10"
+                  >
+                    <div
+                      class="flex items-center justify-between p-2 rounded-lg bg-surface-container border border-forest-deep/5"
+                    >
+                      <div class="flex items-center gap-2">
+                        <span
+                          class="w-2 h-2 rounded-full bg-slate-tech-blue"
+                        ></span>
+                        <span
+                          class="font-mono-code text-[11px] text-on-surface-variant uppercase font-medium"
+                          >Huella Reincorporación:</span
+                        >
+                      </div>
+                      <span
+                        class="font-mono-code text-xs text-slate-tech-blue font-bold"
+                        >1.10 kg CO2e</span
+                      >
+                    </div>
+                    <!-- Recyclability Progress Meter -->
+                    <div class="flex flex-col gap-1">
+                      <div
+                        class="flex items-center justify-between font-mono-code text-xs"
+                      >
+                        <span class="text-on-surface-variant"
+                          >Reciclabilidad &amp; Componentes Útiles</span
+                        >
+                        <span class="font-bold text-forest-deep">82%</span>
+                      </div>
+                      <div
+                        class="h-2 w-full bg-surface-container rounded-full overflow-hidden flex"
+                      >
+                        <div
+                          class="h-full bg-slate-tech-blue w-[82%]"
+                          title="Materiales Técnicos Recuperables"
+                        ></div>
+                        <div
+                          class="h-full bg-surface-variant w-[18%]"
+                          title="Polímeros no reusables"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card Action Footer -->
+                  <div class="pt-2 flex items-center gap-2">
+                    <button
+                      class="flex-1 py-2.5 rounded-lg bg-forest-deep text-mineral-chalk font-body-md text-xs font-semibold hover:bg-forest-canopy transition-colors flex items-center justify-center gap-1.5 border border-forest-canopy"
+                    >
+                      <span
+                        class="material-symbols-outlined text-[17px] text-bioluminescent-mint"
+                        >verified</span
+                      >
+                      <span>Inspeccionar Trazabilidad</span>
+                    </button>
+                    <button
+                      class="p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-forest-deep border border-forest-deep/10 transition-colors"
+                      title="Guardar en favoritos"
+                    >
+                      <span class="material-symbols-outlined text-[18px]"
+                        >bookmark_border</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SECTION: PYME CLOSING CTA BANNER -->
+        <section class="w-full bg-surface py-space-xl">
+          <div class="max-w-7xl mx-auto px-margin lg:px-margin-lg">
+            <div
+              class="p-8 lg:p-12 rounded-3xl bg-forest-deep text-mineral-chalk border border-emerald-800 shadow-2xl relative overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-10"
+            >
+              <!-- Decorative subtle pattern overlay -->
+              <div
+                class="absolute -right-20 -bottom-20 w-96 h-96 rounded-full bg-bioluminescent-mint/10 blur-3xl pointer-events-none"
+              ></div>
+              <div
+                class="absolute top-0 right-1/3 w-64 h-64 rounded-full bg-cyber-lime/5 blur-2xl pointer-events-none"
+              ></div>
+              <div class="flex flex-col gap-4 max-w-2xl relative z-10">
+                <div
+                  class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-mineral-chalk/10 border border-emerald-400/30 text-bioluminescent-mint font-mono-code text-xs font-bold w-fit"
+                >
+                  <span class="material-symbols-outlined text-[16px]"
+                    >handshake</span
+                  >
+                  <span>Convocatoria de Vinculación Regional 2024</span>
+                </div>
+                <h2
+                  class="font-display text-3xl lg:text-4xl font-bold tracking-tight text-mineral-chalk leading-tight"
+                >
+                  Tu impacto merece ser visible.
+                </h2>
+                <p
+                  class="font-body-lg text-sm lg:text-base text-mineral-chalk/80 leading-relaxed"
+                >
+                  ¿Eres fabricante, productor o taller con procesos sostenibles
+                  en el Valle del Cauca? Integra tu catálogo a VOLIUZ sin costo.
+                  Nuestro equipo de la Facultad de Ingeniería de Unicatólica
+                  realiza la auditoría de ciclo de vida para que tus clientes
+                  confíen plenamente en tus credenciales.
+                </p>
+                <div
+                  class="flex flex-wrap items-center gap-y-2 gap-x-6 pt-2 font-mono-code text-xs text-mineral-chalk/90"
+                >
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="material-symbols-outlined text-bioluminescent-mint text-[18px]"
+                      >check_circle</span
+                    >
+                    <span>Auditoría de huella 100% gratuita</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="material-symbols-outlined text-bioluminescent-mint text-[18px]"
+                      >check_circle</span
+                    >
+                    <span>Sello digital trazable para e-commerce</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="material-symbols-outlined text-bioluminescent-mint text-[18px]"
+                      >check_circle</span
+                    >
+                    <span>Sin comisiones intermedias</span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col sm:flex-row lg:flex-col gap-3 shrink-0 w-full lg:w-auto relative z-10"
+              >
+                <a
+                  class="px-6 py-3.5 rounded-xl bg-bioluminescent-mint text-forest-deep font-body-md text-sm font-bold text-center shadow-lg hover:bg-emerald-400 transition-all flex items-center justify-center gap-2 border border-emerald-300"
+                  data-path="portal-pymes"
+                  href="#"
+                >
+                  <span class="material-symbols-outlined text-[20px]"
+                    >app_registration</span
+                  >
+                  <span>Registrar mi PyME en VOLIUZ</span>
+                </a>
+                <a
+                  class="px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/15 text-mineral-chalk font-body-md text-sm font-semibold text-center border border-white/20 transition-colors flex items-center justify-center gap-2"
+                  data-path="metodologia-co2e"
+                  href="#"
+                >
+                  <span
+                    class="material-symbols-outlined text-[20px] text-bioluminescent-mint"
+                    >description</span
+                  >
+                  <span>Descargar Guía de Validación CVC</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer
+      class="w-full bg-forest-deep text-mineral-chalk/80 border-t border-forest-canopy"
+    >
+      <div class="max-w-7xl mx-auto px-margin lg:px-margin-lg py-space-xl">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-lg pb-space-xl border-b border-forest-canopy/60"
+        >
+          <div class="flex flex-col gap-space-md">
+            <div class="flex items-center gap-2.5">
+              <div
+                class="w-8 h-8 rounded-lg bg-bioluminescent-mint/20 border border-bioluminescent-mint/40 flex items-center justify-center"
+              >
+                <span
+                  class="material-symbols-outlined text-bioluminescent-mint text-[20px]"
+                  >eco</span
+                >
+              </div>
+              <span
+                class="font-display text-xl font-bold tracking-tight text-mineral-chalk"
+                >VOLIUZ</span
+              >
+            </div>
+            <p
+              class="font-body-sm text-xs text-mineral-chalk/70 leading-relaxed"
+            >
+              Ecosistema de datos abiertos y validación técnica para la
+              transparencia en huella de carbono y reciclabilidad regional en el
+              Valle del Cauca.
+            </p>
+            <div
+              class="flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-forest-canopy"
+            >
+              <span
+                class="material-symbols-outlined text-bioluminescent-mint text-[22px]"
+                >school</span
+              >
+              <div class="flex flex-col">
+                <span
+                  class="font-mono-code text-xs text-mineral-chalk font-bold"
+                  >Alianza Académica</span
+                >
+                <span class="font-body-sm text-[11px] text-mineral-chalk/70"
+                  >Unicatólica — Lumen Gentium</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3">
+            <h3
+              class="font-mono-code text-xs font-bold text-bioluminescent-mint uppercase tracking-wider"
+            >
+              Marco Normativo Colombia
+            </h3>
+            <ul
+              class="flex flex-col gap-2.5 font-body-sm text-xs text-mineral-chalk/80"
+            >
+              <li class="flex items-center gap-2">
+                <span
+                  class="material-symbols-outlined text-[16px] text-bioluminescent-mint"
+                  >verified</span
+                >
+                <span>Ley 1480 de 2011 (Estatuto del Consumidor)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span
+                  class="material-symbols-outlined text-[16px] text-bioluminescent-mint"
+                  >verified</span
+                >
+                <span>Ley 1672 de 2013 (Gestión RAEE)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span
+                  class="material-symbols-outlined text-[16px] text-bioluminescent-mint"
+                  >verified</span
+                >
+                <span>Ley 1581 de 2012 (Protección Habeas Data)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span
+                  class="material-symbols-outlined text-[16px] text-bioluminescent-mint"
+                  >verified</span
+                >
+                <span>ODS 12: Producción y Consumo Responsable</span>
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-3">
+            <h3
+              class="font-mono-code text-xs font-bold text-bioluminescent-mint uppercase tracking-wider"
+            >
+              Ecosistema Regional
+            </h3>
+            <ul
+              class="flex flex-col gap-2.5 font-body-sm text-xs text-mineral-chalk/80"
+            >
+              <li class="flex items-center gap-2">
+                <span
+                  class="material-symbols-outlined text-[16px] text-secondary-container"
+                  >shield</span
+                >
+                <span>Línea Base DAGMA (Santiago de Cali)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span
+                  class="material-symbols-outlined text-[16px] text-secondary-container"
+                  >shield</span
+                ><span>Certificación CVC Valle Circular</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span
+                  class="material-symbols-outlined text-[16px] text-secondary-container"
+                  >shield</span
+                ><span>Factores de Emisión UPME / MinAmbiente</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span
+                  class="material-symbols-outlined text-[16px] text-secondary-container"
+                  >shield</span
+                ><span>Validación de Trazabilidad Logística</span>
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-3">
+            <h3
+              class="font-mono-code text-xs font-bold text-bioluminescent-mint uppercase tracking-wider"
+            >
+              Enlaces de Navegación
+            </h3>
+            <ul
+              class="flex flex-col gap-2 font-body-sm text-xs text-mineral-chalk/80"
+            >
+              <li>
+                <a
+                  class="hover:text-bioluminescent-mint transition-colors"
+                  data-path="directorio-verde"
+                  href="#"
+                  >Directorio de PyMEs Verdes</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-bioluminescent-mint transition-colors"
+                  data-path="metodologia-co2e"
+                  href="#"
+                  >Fórmulas y Factores CO2e</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-bioluminescent-mint transition-colors"
+                  data-path="portal-pymes"
+                  href="#"
+                  >Registro de Emisiones PyME</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-bioluminescent-mint transition-colors"
+                  data-path="centro-de-impacto"
+                  href="#"
+                  >Tablero de Mitigación Departamental</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-bioluminescent-mint transition-colors"
+                  data-path="extension-web"
+                  href="#"
+                  >Extensión de Navegador VOLIUZ</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="pt-6 flex flex-col md:flex-row items-center justify-between gap-4"
+        >
+          <p
+            class="font-body-sm text-xs text-mineral-chalk/60 text-center md:text-left"
+          >
+            © 2024 VOLIUZ. Plataforma de Transparencia Ambiental desarrollada
+            con Unicatólica. Cali, Valle del Cauca, Colombia.
+          </p>
+          <div class="flex items-center gap-4 font-mono-code text-xs">
+            <span class="flex items-center gap-2"
+              ><span
+                class="w-2 h-2 rounded-full bg-bioluminescent-mint pulse-mint"
+              ></span
+              ><span class="text-mineral-chalk">Nodo Activo Cali</span></span
+            ><span class="text-outline-variant">|</span
+            ><span class="text-mineral-chalk/80">Protocolo v1.2</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
