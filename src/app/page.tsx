@@ -1,5 +1,9 @@
-import StitchView from '@/components/StitchView';
+import Hero from '@/components/home/Hero';
 
 export default function HomePage() {
-  return <StitchView file="inicio.html" title="VOLIUZ - Inicio" />;
+  return (
+    <main>
+      <Hero />
+    </main>
+  );
 }
