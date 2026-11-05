@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Geist, Space_Grotesk } from 'next/font/google';
 import Navbar from '@/components/layout/Navbar';
+import Footer from '@/components/layout/Footer';
 import './globals.css';
 
 const geist = Geist({
@@ -34,6 +35,7 @@ export default function RootLayout({
       <body className={`${geist.variable} ${spaceGrotesk.variable}`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
