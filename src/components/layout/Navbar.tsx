@@ -8,6 +8,7 @@ const navigation = [
   { label: 'Directorio', href: '/directorio' },
   { label: 'Pymes', href: '/pymes' },
   { label: 'Transparencia', href: '/transparencia' },
+  { href: '/extension', label: 'Extensión' },
 ];
 
 export default function Navbar() {
